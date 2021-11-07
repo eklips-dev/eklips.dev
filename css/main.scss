@@ -39,6 +39,11 @@ body {
   }
 }
 
+.sticky {
+  position: fixed;
+  width: 100%;
+}
+
 a {
   color: #444444;
 }
@@ -193,7 +198,11 @@ nav {
     }
   }
 }
-
+@media (max-width: 430px) {
+  .hero-img {
+    display: none;
+  }
+}
 @media only screen and (min-width: 1080px) {
   .container {
     width: 1080px;
@@ -230,4 +239,15 @@ nav {
   .primary-cta {
     margin-right: 1em;
   }
+}
+
+.fadein {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.fadein.visible {
+  opacity: 1;
+  transform: translate(0, 0);
 }

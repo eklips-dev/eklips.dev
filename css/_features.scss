@@ -56,7 +56,7 @@
 
   &__icon {
     display: flex;
-    @include breakpoint-down(small) {
+    @include breakpoint-up(small) {
       img {
         width: 30%;
       }

@@ -290,8 +290,10 @@ nav.menu-btn {
   display: flex;
 }
 
-.features__icon img {
-  width: 30%;
+@media (max-width: 39.9375em) {
+  .features__icon img {
+    width: 30%;
+  }
 }
 
 @media (min-width: 64em) {

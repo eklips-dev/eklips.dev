@@ -94,6 +94,12 @@ section {
   display: inline-block;
 }
 
+.left-col .primary-cta:hover {
+  background: #0065ca;
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+}
+
 .left-col img {
   margin-right: 0.5em;
 }

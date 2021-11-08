@@ -303,6 +303,12 @@ nav.menu-btn {
   }
 }
 
+@media (min-width: null) {
+  .features__icon {
+    width: 0%;
+  }
+}
+
 .features__title {
   font-size: 1.25rem;
   font-weight: 700;

@@ -63,6 +63,9 @@
     @include breakpoint-up(large) {
       margin-bottom: 0.5rem;
     }
+    @include breakpoint-up(small) {
+      width: 0%;
+    }
   }
 
   &__title {

@@ -1,0 +1,70 @@
+#contact {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding-top: 1.5rem;
+}
+
+#contact__info {
+  display: inline-block;
+}
+
+#contact__title {
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 0.3vw;
+}
+
+#contact__subtext {
+  margin-bottom: 2vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  font-size: 2vw;
+  font-weight: 700;
+  line-height: 0.5vw;
+}
+
+.contact-cta {
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.6em 1.3em;
+  font-size: 1.4em;
+  border-radius: 5em;
+  font-weight: bold;
+  display: inline-block;
+  &:hover {
+    background: #4617ac;
+    transition: background 0.2s ease-in-out;
+  }
+}
+
+.contact-section-cta {
+  padding-top: 2rem;
+}
+
+@media (max-width: 640px) {
+  #contact {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    height: fit-content;
+    padding-bottom: 3rem;
+  }
+
+  #contact__info {
+    display: inline-block;
+  }
+
+  #contact__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 9vw;
+  }
+
+  #contact__subtext {
+    font-size: 6vw;
+    text-align: center;
+    line-height: normal;
+  }
+}

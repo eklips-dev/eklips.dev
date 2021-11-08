@@ -26,11 +26,13 @@
       href="images/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
     <title>Perandor Web Design</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div class="navbar sticky">
+    <div class="navbar">
       <div class="container">
         <a class="logo" href="index.html">PERANDOR<span>.DESIGN</span></a>
 
@@ -50,8 +52,8 @@
           />
 
           <ul class="primary-nav">
-            <li ><a href="services.html" >Services</a></li>
-            <li ><a href="about.html" >About</a></li>
+            <li ><a href="#services">Services</a></li>
+            <li ><a href="about.html">About</a></li>
           </ul>
 
           <ul class="secondary-nav">
@@ -95,12 +97,110 @@
         </div>
 
         <img
-          src="images/assets/Designer.svg"
+          src="images/assets/home-hero-img.svg"
           class="hero-img"
           alt="Illustration"
         />
       </div>
     </section>
+    <section class="features features-container" id="services">
+      <div class="features__grid fadein">
+        <div class="features__item">
+          <div class="features__icon">
+            <img src="images/assets/icon_web-design.svg" alt="Icon" />
+          </div>
+          <div class="features__title">Web Design</div>
+          <div class="features__desc">
+            Good web design is how companies stand out from their competitors. 
+            High quality web design leads to increased user conversion and engagement. 
+            Through a proven web design process, we help clients launch websites and products that improve on their bottom line.
+          </div>
+        </div>
+
+        <div class="features__item">
+          <div class="features__icon">
+            <img src="images/assets/icon_web-development.svg" alt="Icon" />
+          </div>
+          <div class="features__title">Web Development
+          </div>
+          <div class="features__desc">
+            Modern websites need to be responsive and fully functional at all sizes. 
+            We develop all of our sites with a mobile first approach and ensure that our code quality is clean, organized and performant. 
+            Already have a design but need it developed? We’re here to help!
+          </div>
+        </div>
+
+        <div class="features__item">
+          <div class="features__icon">
+            <img src="images/assets/icon_ux.svg" alt="Icon" />
+          </div>
+          <div class="features__title">User Experience
+          </div>
+          <div class="features__desc">
+            In order to build successful products you have to understand the user. We create user personas, wireframes and prototypes to test with users. 
+            This allows us to gather feedback which helps to shape the product and can quickly eliminate potential risks – saving you time and money.
+          </div>
+        </div>
+
+        <div class="features__item">
+          <div class="features__icon">
+            <img src="images/assets/icon_seo.svg" alt="Icon" />
+          </div>
+          <div class="features__title">SEO</div>
+          <div class="features__desc">
+            Do you want your site to rank higher in search results?
+            Google is constantly changing their algorithms for how they rank pages. 
+            Don’t worry about constantly playing catch-up. We will make sure your website it optimized, providing you the best opportunities for organic search exposure.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hero">
+      <div class="container fadein">
+        <div class="left-col">
+          <p class="subhead">Web Design & Development Done Differently</p>
+          <h2>We <span style="color: var(--primary-color)">meticulously</span> write the code line by line.
+          </h2>
+          <h3>
+            This gives us much more control over the design, 
+            and the website performs lightning fast because there's no bloated or messy code that slows it down.
+          </h3> 
+        </div>
+        <img
+          src="images/assets/coding.svg"
+          class="hero-img"
+          alt="Illustration"
+        />
+      </div>
+    </section>
+    <section id="contact">
+      <div id="contact__info" class="fadein">
+        <h2 id="contact__title">
+          Reach Out To Us.
+        </h2>
+        <br>
+        <div id="contact__subtext">
+          <p>
+            Have a project in mind?</p>
+          <p>
+            Contact us and let's talk further.</p>
+        </div>
+        <div class="contact-section-cta">
+          <a
+            href="https://www.hrcg.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-cta"
+            >Cooperate</a
+          >
+        </div>
+    </section>
+    <svg 
+    id="myBtn" stroke="currentColor" fill="var(--primary-color)" stroke-width="0" viewBox="0 0 512 512" 
+    height="2.3em" width="2.3em" onclick="topFunction()"
+    xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm231-113.9L103.5 277.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L256 226.9l101.6 101.6c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L273 142.1c-9.4-9.4-24.6-9.4-34 0z"></path>
+  </svg>
 <script src="js/app.js"></script>
 <script src="js/typerwriter.js"></script>
 

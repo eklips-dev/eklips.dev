@@ -1,52 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import "mixins";
+@import "contact";
+@import "nav";
+@import "features";
 
 :root {
-  --primary-color: #007af3;
+  --primary-color: #5722cd;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: #f2f2f2;
   margin: 0;
   font-family: "Poppins";
 }
 
-.navbar {
-  background: white;
-  padding: 1em;
-
-  .logo {
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    font-size: 1.2em;
-
-    span {
-      color: var(--primary-color);
-    }
-  }
-
-  nav {
-    display: none;
-  }
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .mobile-menu {
-    cursor: pointer;
-    margin-right: 2rem;
-  }
-}
-
-.sticky {
-  position: fixed;
-  width: 100%;
-}
-
 .hero .container {
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 a {
@@ -91,7 +63,7 @@ section {
     font-weight: bold;
     display: inline-block;
     &:hover {
-      background: #0065ca;
+      background: #4617ac;
       transition: background 0.2s ease-in-out;
     }
   }
@@ -102,126 +74,35 @@ section {
 }
 
 .hero-img {
-  width: 65%;
+  width: 30%;
   margin-top: 3em;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 3em;
 }
-
-label {
-  display: block;
-  font-size: 1.2em;
-  margin-bottom: 0.5em;
-}
-
-nav.menu-btn {
-  display: block;
-}
-
-nav {
-  position: fixed;
-  z-index: 999;
-  width: 66%;
-  right: 0;
-  top: 0;
-  background: #20272e;
-  height: 100vh;
-  padding: 1em;
-
-  ul.primary-nav {
-    margin-top: 5em;
-  }
-
-  li {
-    a {
-      color: white;
-      text-decoration: none;
-      display: block;
-      padding-bottom: 1.5rem;
-      font-size: 2rem;
-      text-align: right;
-
-      &:hover {
-        font-weight: bold;
-      }
-    }
-  }
-}
-
-.mobile-menu-exit {
-  float: right;
-  margin: 1em;
-  cursor: pointer;
+h3 {
+  font-weight: 400;
 }
 
 @media only screen and (min-width: 768px) {
-  .mobile-menu,
-  .mobile-menu-exit {
-    display: none;
-  }
+  li.go-premium-cta a {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    font-weight: bold;
+    border-radius: 5em;
+    margin-top: -0.2em;
 
-  .navbar .container {
-    display: grid;
-    grid-template-columns: 180px auto;
-  }
-
-  .navbar nav {
-    display: flex;
-    justify-content: right;
-    background: none;
-    position: unset;
-    height: auto;
-    width: 100%;
-    padding: 0;
-
-    ul {
-      display: flex;
-    }
-
-    a {
-      color: black;
-      font-size: 1em;
-      padding: 0.1em 1em;
-    }
-
-    ul.primary-nav {
-      margin: 0;
-    }
-
-    li.current a {
-      font-weight: bold;
-    }
-    li.go-premium-cta a {
-      color: var(--primary-color);
-      border: 3px solid var(--primary-color);
-      font-weight: bold;
-      border-radius: 5em;
-      margin-top: -0.2em;
-
-      &:hover {
-        background: var(--primary-color);
-        color: white;
-      }
+    &:hover {
+      background: var(--primary-color);
+      color: white;
     }
   }
 }
+
 @media (max-width: 430px) {
-  nav {
-    width: 100%;
-    height: 65vh;
-    padding: 0;
-    li a {
-      text-align: center;
-      padding-top: 2rem;
-    }
-  }
   .hero-img {
     display: none;
-  }
-  .hero .container:first-child {
-    padding-top: 8rem;
   }
   .hero-cta {
     padding-top: 4rem;
@@ -234,16 +115,13 @@ nav {
   }
 }
 @media only screen and (min-width: 1080px) {
-  .hero .container {
-    padding-top: 0;
-  }
   .container {
     width: 1080px;
     margin: 0 auto;
   }
 
   section {
-    padding: 6em 3em;
+    padding: 4em 2em;
   }
 
   .hero .container {
@@ -283,4 +161,15 @@ nav {
 .fadein.visible {
   opacity: 1;
   transform: translate(0, 0);
+}
+
+/* Sroll back to top button */
+#myBtn {
+  background-color: transparent;
+  display: none;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.1875rem;
+  z-index: 99;
+  cursor: pointer;
 }

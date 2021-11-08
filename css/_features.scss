@@ -59,12 +59,14 @@
     justify-content: center;
     align-items: center;
     width: 15%;
-
+    img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 15%;
+    }
     @include breakpoint-up(large) {
       margin-bottom: 0.5rem;
-    }
-    @include breakpoint-up(small) {
-      width: 0%;
     }
   }
 

@@ -56,13 +56,7 @@
 
   &__icon {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 15%;
     img {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       width: 30%;
     }
     @include breakpoint-up(large) {

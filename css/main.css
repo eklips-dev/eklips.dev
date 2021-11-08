@@ -307,7 +307,7 @@ nav.menu-btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 15%;
+  width: 30%;
 }
 
 @media (min-width: 64em) {

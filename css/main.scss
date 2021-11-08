@@ -39,6 +39,11 @@ section {
   text-align: center;
 }
 
+.about-page {
+  padding: 0;
+  margin: 0 auto;
+}
+
 .left-col {
   .subhead {
     text-transform: uppercase;
@@ -117,7 +122,25 @@ hr.style-eight:after {
   }
 }
 
+.about-h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.about-h2 {
+  line-height: 1.3em;
+}
+
 @include breakpoint-down(small) {
+  .seo-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0rem 4rem 0rem 4rem;
+    font-size: 1.2rem;
+  }
   .hero-img {
     display: none;
   }

@@ -56,7 +56,7 @@
 
   &__icon {
     display: flex;
-    @include breakpoint-up(small) {
+    @media (max-width: 480px) {
       img {
         width: 30%;
       }

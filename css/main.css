@@ -290,7 +290,7 @@ nav.menu-btn {
   display: flex;
 }
 
-@media (min-width: null) {
+@media (max-width: 480px) {
   .features__icon img {
     width: 30%;
   }

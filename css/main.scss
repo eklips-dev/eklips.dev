@@ -132,7 +132,12 @@ hr.style-eight:after {
 .about-h2 {
   line-height: 1.3em;
 }
-
+/* Sticky Nav */
+.sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
 @include breakpoint-down(small) {
   .seo-list {
     display: flex;

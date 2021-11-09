@@ -103,6 +103,7 @@
 
 .navbar .mobile-menu {
   cursor: pointer;
+  margin-right: 2.5rem;
 }
 
 nav.menu-btn {
@@ -142,7 +143,7 @@ nav li a:hover {
 
 .mobile-menu-exit {
   float: right;
-  margin: 1em;
+  margin: 2em;
   cursor: pointer;
 }
 
@@ -650,6 +651,13 @@ hr.style-eight:after {
 
 .about-h2 {
   line-height: 1.3em;
+}
+
+/* Sticky Nav */
+.sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 
 @media (max-width: 39.9375em) {

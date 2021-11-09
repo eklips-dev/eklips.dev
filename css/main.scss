@@ -110,11 +110,16 @@ hr.style-eight:after {
 }
 
 .error-page {
-  padding-top: 4rem;
   font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--primary-color);
+}
+.error-page-head {
+  font-size: 6rem;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 auto;
 }
 .error-btn {
   background: var(--primary-color);

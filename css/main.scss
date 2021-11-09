@@ -108,6 +108,26 @@ hr.style-eight:after {
   padding: 0 0.25em;
   background: transparent;
 }
+
+.error-page {
+  padding-top: 4rem;
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.error-btn {
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 2em;
+  font-weight: bold;
+  display: inline-block;
+  &:hover {
+    background: #4617ac;
+    transition: background 0.2s ease-in-out;
+  }
+}
 @media (min-width: 755px) {
   li.go-premium-cta a {
     color: var(--primary-color);
@@ -138,6 +158,7 @@ hr.style-eight:after {
   width: 100%;
   z-index: 999;
 }
+
 @include breakpoint-down(small) {
   .hero .container {
     padding-top: 6.5rem;

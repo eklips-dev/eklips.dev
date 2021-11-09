@@ -629,6 +629,29 @@ hr.style-eight:after {
   background: transparent;
 }
 
+.error-page {
+  padding-top: 4rem;
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.error-btn {
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 2em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.error-btn:hover {
+  background: #4617ac;
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+}
+
 @media (min-width: 755px) {
   li.go-premium-cta a {
     color: var(--primary-color);

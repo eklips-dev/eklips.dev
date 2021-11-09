@@ -139,6 +139,9 @@ hr.style-eight:after {
   z-index: 999;
 }
 @include breakpoint-down(small) {
+  .hero .container {
+    padding-top: 6.5rem;
+  }
   .seo-list {
     display: flex;
     align-items: center;

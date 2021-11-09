@@ -661,6 +661,9 @@ hr.style-eight:after {
 }
 
 @media (max-width: 39.9375em) {
+  .hero .container {
+    padding-top: 6.5rem;
+  }
   .seo-list {
     display: -webkit-box;
     display: -ms-flexbox;

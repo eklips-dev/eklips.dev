@@ -1,4 +1,7 @@
 .features {
+  @media (min-width: 1680px) {
+    margin: 0% 20% 0% 20%;
+  }
   @include breakpoint-up(large) {
     padding-left: 4rem;
     padding-right: 4rem;

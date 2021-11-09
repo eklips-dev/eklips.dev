@@ -204,6 +204,12 @@ nav.menu-btn {
   }
 }
 
+@media (min-width: 1680px) {
+  .features {
+    margin: 0% 20% 0% 20%;
+  }
+}
+
 @media (min-width: 64em) {
   .features {
     padding-left: 4rem;

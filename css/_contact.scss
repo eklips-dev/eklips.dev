@@ -17,12 +17,13 @@
 }
 
 #contact__subtext {
-  margin-bottom: 2vw;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  font-size: 2vw;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 0.5vw;
+}
+@include breakpoint-up(xlarge) {
+  #contact__subtext {
+    font-size: 2rem;
+  }
 }
 
 .contact-cta {
@@ -41,7 +42,7 @@
 }
 
 .contact-section-cta {
-  padding-top: 2rem;
+  padding-top: 0.5rem;
 }
 
 @include breakpoint-down(medium) {

@@ -53,3 +53,12 @@ function closeMenu() {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
 }
+
+// show language dropdowns
+jQuery("#lang-switcher")
+  .find(".ui-dropdown-list-trigger")
+  .each(function () {
+    jQuery(this).click(function () {
+      jQuery(this).parent().toggleClass("active");
+    });
+  });

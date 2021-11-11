@@ -83,7 +83,137 @@ a {
     color: white;
   }
 }
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
 
+/* LANGUAGE SWITCHER */
+.languageSwitcher {
+  margin-left: 1rem;
+  margin-top: -1rem;
+  background-color: white;
+  padding: 0;
+}
+@media (max-width: 480px) {
+  .languageSwitcher {
+    display: none;
+  }
+}
+/* ui-dropdown-list */
+
+.ui-dropdown-list {
+  position: relative;
+}
+
+p.ui-dropdown-list-trigger {
+  margin-top: 0;
+}
+
+.ui-dropdown-list-trigger strong {
+  position: relative;
+  z-index: 999;
+}
+
+.ui-dropdown-list-trigger strong:after {
+  display: block;
+  position: absolute;
+  content: "";
+  right: 5px;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000000;
+}
+
+.ui-dropdown-list-trigger strong,
+.ui-dropdown-list ul a {
+  display: block;
+  width: 40px;
+  cursor: pointer;
+  padding: 6px 3px;
+  font-size: 13px;
+  line-height: 13px;
+  color: #000;
+  font-weight: normal;
+}
+
+.ui-dropdown-list ul {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 25px;
+  margin-top: 0;
+  padding: 0;
+  z-index: 1000;
+}
+
+.ui-dropdown-list li {
+  list-style-type: none;
+}
+
+.ui-dropdown-list ul a,
+.ui-dropdown-list ul a:link,
+.ui-dropdown-list ul a:visited {
+  position: relative;
+  display: block;
+  float: right;
+}
+
+.ui-dropdown-list ul a:hover,
+.ui-dropdown-list ul a:focus {
+  border-bottom: none;
+  color: #000;
+}
+
+/* JS interactivity */
+.no-js .ui-dropdown-list ul,
+.ui-dropdown-list.active ul {
+  display: block;
+}
+
+.ui-dropdown-list.active strong:after {
+  border-top-color: #000;
+}
+.ui-dropdown-list strong {
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px;
+  transition: 0.3s;
+}
+.ui-dropdown-list strong:hover {
+  border-color: #000;
+}
+
+.ui-dropdown-list.active strong {
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px 1px 0 1px;
+  transition: 0s;
+}
+.ui-dropdown-list.active ul {
+  border-style: solid;
+  border-color: #000;
+  border-width: 0 1px 1px 1px;
+}
+
+#lang-switcher a,
+#lang-switcher strong {
+  padding-left: 5px;
+  background-color: white;
+}
+
+#lang-switcher strong {
+  float: right;
+}
 @media (max-width: 480px) {
   .go-premium-cta {
     display: none;
@@ -95,7 +225,7 @@ a {
     font-size: 1em;
     padding: 0.1em 1em;
   }
-  li.current a {
+  .current {
     color: var(--primary-color);
   }
   .navbar.container {

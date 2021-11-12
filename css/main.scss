@@ -4,6 +4,7 @@
 @import "nav";
 @import "features";
 @import "ourwork";
+@import "fadein";
 
 :root {
   --primary-color: #5722cd;
@@ -145,24 +146,9 @@ hr.style-eight:after {
 .about-h2 {
   line-height: 1.3em;
 }
-/* Sticky Nav */
-.sticky {
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-}
-
 @include breakpoint-down(small) {
   .hero .container {
     padding-top: 6.5rem;
-  }
-  .seo-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0rem 4rem 0rem 4rem;
-    font-size: 1.2rem;
   }
   .hero-img {
     display: none;
@@ -213,72 +199,6 @@ hr.style-eight:after {
   .primary-cta {
     margin-right: 1em;
   }
-}
-
-/* defines the animation */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-/*Animations*/
-
-[data-animate-in] {
-  opacity: 0;
-  transition: transform 0.8s ease, opacity 0.8s ease;
-}
-
-[data-animate-in="up"] {
-  transform: translate3d(0, 24px, 0);
-}
-
-[data-animate-in="left"] {
-  transform: translate3d(-25%, 0, 0);
-}
-
-[data-animate-in="right"] {
-  transform: translate3d(25%, 0, 0);
-}
-
-[data-animate-in="down"] {
-  transform: translate3d(0, -24px, 0);
-}
-
-[data-animate-in="fadeIn"] {
-  transform: translate3d(0, 0, 0);
-}
-
-[data-animate-in].in-view {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transition: transform 0.6s ease, opacity 0.6s ease;
-}
-
-.fade-in {
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-
-.page-loaded .fade-in,
-.page-loaded.fade-in {
-  opacity: 1;
-}
-
-.isSafari.isTouch [data-animate-in],
-.isSafari.isTouch [data-animate-in="up"] {
-  opacity: 1;
-  transition: none;
-  transform: none;
 }
 
 /* Sroll back to top button */

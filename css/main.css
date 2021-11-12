@@ -82,6 +82,13 @@ a {
   text-decoration: none;
 }
 
+/* Sticky Nav */
+.sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
 .logo {
   text-decoration: none;
   font-weight: bold;
@@ -197,12 +204,6 @@ a {
   padding: 0;
 }
 
-@media (max-width: 480px) {
-  .languageSwitcher {
-    display: none;
-  }
-}
-
 /* ui-dropdown-list */
 .ui-dropdown-list {
   position: relative;
@@ -316,7 +317,32 @@ p.ui-dropdown-list-trigger {
   float: right;
 }
 
+@media (min-width: 768px) {
+  .lang-mobile {
+    display: none;
+  }
+}
+
 @media (max-width: 480px) {
+  .languageSwitcher {
+    display: none;
+  }
+  .lang-mobile {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-top: 2px solid black;
+    border-top-width: 5px;
+    color: black;
+    padding-top: 0.5rem;
+  }
+  .lang-mobile:hover {
+    color: var(--primary-color);
+  }
+  .lang-mobile img {
+    height: 1.2rem;
+  }
   .go-premium-cta {
     display: none;
   }
@@ -358,7 +384,7 @@ p.ui-dropdown-list-trigger {
     left: 0;
   }
   .nav-item {
-    margin: 2.5rem 0;
+    margin: 1.5rem 0;
   }
   .hamburger {
     display: block;
@@ -702,6 +728,96 @@ ol {
   }
 }
 
+/* defines the animation */
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/*Animations*/
+[data-animate-in] {
+  opacity: 0;
+  -webkit-transition: opacity 0.8s ease, -webkit-transform 0.8s ease;
+  transition: opacity 0.8s ease, -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  transition: transform 0.8s ease, opacity 0.8s ease, -webkit-transform 0.8s ease;
+}
+
+[data-animate-in="up"] {
+  -webkit-transform: translate3d(0, 24px, 0);
+          transform: translate3d(0, 24px, 0);
+}
+
+[data-animate-in="left"] {
+  -webkit-transform: translate3d(-25%, 0, 0);
+          transform: translate3d(-25%, 0, 0);
+}
+
+[data-animate-in="right"] {
+  -webkit-transform: translate3d(25%, 0, 0);
+          transform: translate3d(25%, 0, 0);
+}
+
+[data-animate-in="down"] {
+  -webkit-transform: translate3d(0, -24px, 0);
+          transform: translate3d(0, -24px, 0);
+}
+
+[data-animate-in="fadeIn"] {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+[data-animate-in].in-view {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transition: opacity 0.6s ease, -webkit-transform 0.6s ease;
+  transition: opacity 0.6s ease, -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  transition: transform 0.6s ease, opacity 0.6s ease, -webkit-transform 0.6s ease;
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.page-loaded .fade-in,
+.page-loaded.fade-in {
+  opacity: 1;
+}
+
+.isSafari.isTouch [data-animate-in],
+.isSafari.isTouch [data-animate-in="up"] {
+  opacity: 1;
+  -webkit-transition: none;
+  transition: none;
+  -webkit-transform: none;
+          transform: none;
+}
+
 :root {
   --primary-color: #5722cd;
 }
@@ -852,33 +968,9 @@ hr.style-eight:after {
   line-height: 1.3em;
 }
 
-/* Sticky Nav */
-.sticky {
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-}
-
 @media (max-width: 39.9375em) {
   .hero .container {
     padding-top: 6.5rem;
-  }
-  .seo-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0rem 4rem 0rem 4rem;
-    font-size: 1.2rem;
   }
   .hero-img {
     display: none;
@@ -930,96 +1022,6 @@ hr.style-eight:after {
   .primary-cta {
     margin-right: 1em;
   }
-}
-
-/* defines the animation */
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-/*Animations*/
-[data-animate-in] {
-  opacity: 0;
-  -webkit-transition: opacity 0.8s ease, -webkit-transform 0.8s ease;
-  transition: opacity 0.8s ease, -webkit-transform 0.8s ease;
-  transition: transform 0.8s ease, opacity 0.8s ease;
-  transition: transform 0.8s ease, opacity 0.8s ease, -webkit-transform 0.8s ease;
-}
-
-[data-animate-in="up"] {
-  -webkit-transform: translate3d(0, 24px, 0);
-          transform: translate3d(0, 24px, 0);
-}
-
-[data-animate-in="left"] {
-  -webkit-transform: translate3d(-25%, 0, 0);
-          transform: translate3d(-25%, 0, 0);
-}
-
-[data-animate-in="right"] {
-  -webkit-transform: translate3d(25%, 0, 0);
-          transform: translate3d(25%, 0, 0);
-}
-
-[data-animate-in="down"] {
-  -webkit-transform: translate3d(0, -24px, 0);
-          transform: translate3d(0, -24px, 0);
-}
-
-[data-animate-in="fadeIn"] {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-
-[data-animate-in].in-view {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-transition: opacity 0.6s ease, -webkit-transform 0.6s ease;
-  transition: opacity 0.6s ease, -webkit-transform 0.6s ease;
-  transition: transform 0.6s ease, opacity 0.6s ease;
-  transition: transform 0.6s ease, opacity 0.6s ease, -webkit-transform 0.6s ease;
-}
-
-.fade-in {
-  opacity: 0;
-  -webkit-transition: opacity 1s ease;
-  transition: opacity 1s ease;
-}
-
-.page-loaded .fade-in,
-.page-loaded.fade-in {
-  opacity: 1;
-}
-
-.isSafari.isTouch [data-animate-in],
-.isSafari.isTouch [data-animate-in="up"] {
-  opacity: 1;
-  -webkit-transition: none;
-  transition: none;
-  -webkit-transform: none;
-          transform: none;
 }
 
 /* Sroll back to top button */

@@ -11,11 +11,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   background: #f2f2f2;
   margin: 0;
   font-family: "Poppins";
+  overflow-x: hidden;
 }
 
 .hero .container {

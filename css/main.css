@@ -185,6 +185,10 @@ a {
   color: white;
 }
 
+.current {
+  color: var(--primary-color);
+}
+
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -350,12 +354,8 @@ p.ui-dropdown-list-trigger {
 
 @media only screen and (max-width: 768px) {
   .navbar a {
-    color: black;
     font-size: 1em;
     padding: 0.1em 1em;
-  }
-  .current {
-    color: var(--primary-color);
   }
   .navbar.container {
     display: -ms-grid;

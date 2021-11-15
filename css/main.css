@@ -1058,4 +1058,12 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-button {
   display: none;
 }
+
+/*
+.wrapper {
+  background-image: url("");
+  background-position: top center;
+  background-size: cover;
+}
+*/
 /*# sourceMappingURL=main.css.map */

@@ -218,7 +218,9 @@ p.ui-dropdown-list-trigger {
 #lang-switcher a,
 #lang-switcher strong {
   padding-left: 5px;
-  background-color: white;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 #lang-switcher strong {

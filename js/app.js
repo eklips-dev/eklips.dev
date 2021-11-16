@@ -20,6 +20,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+// Menu
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
@@ -132,4 +133,14 @@ $(function () {
       el.css("transition-delay", d);
     }
   });
+});
+
+// Change Nav Background color on scroll
+$(window).scroll(function () {
+  var scroll = $(window).scrollTop();
+  if (scroll > 100) {
+    $(".navbar").addClass("bg-scrolling");
+  } else {
+    $(".navbar").removeClass("bg-scrolling");
+  }
 });

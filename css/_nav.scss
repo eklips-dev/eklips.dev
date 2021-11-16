@@ -5,13 +5,12 @@ li {
 a {
   text-decoration: none;
 }
-/* Sticky Nav
+/* Sticky Nav */
 .sticky {
   position: fixed;
   width: 100%;
   z-index: 999;
 }
-*/
 
 .logo {
   text-decoration: none;
@@ -93,6 +92,10 @@ a {
 
 .current {
   color: var(--primary-color);
+}
+
+.bg-scrolling {
+  background: white;
 }
 
 .visuallyhidden {
@@ -255,7 +258,7 @@ p.ui-dropdown-list-trigger {
 @media only screen and (max-width: 768px) {
   .navbar a {
     //color: black;
-    font-size: 1.2em;
+    font-size: 1.3em;
     padding: 0.1em 1em;
   }
   .navbar.container {
@@ -280,9 +283,6 @@ p.ui-dropdown-list-trigger {
   .nav-menu.active {
     left: 0;
   }
-  nav.scroll {
-    background-color: white;
-  }
   .nav-item {
     margin: 1.5rem 0;
   }
@@ -290,11 +290,17 @@ p.ui-dropdown-list-trigger {
   .hamburger {
     display: block;
     cursor: pointer;
-    margin-left: 7.5rem;
+    margin-left: 6.5rem;
   }
   @media (max-width: 375px) {
     .hamburger {
-      margin-left: 7.5rem;
+      margin-left: 5.5rem;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .hamburger {
+      margin-left: 1rem;
     }
   }
 

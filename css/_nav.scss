@@ -5,18 +5,19 @@ li {
 a {
   text-decoration: none;
 }
-/* Sticky Nav */
+/* Sticky Nav
 .sticky {
   position: fixed;
   width: 100%;
   z-index: 999;
 }
+*/
 
 .logo {
   text-decoration: none;
   font-weight: bold;
   color: black;
-  font-size: 1.2em;
+  font-size: 1.3em;
 
   span {
     color: var(--primary-color);
@@ -38,7 +39,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-  background-color: white;
+  background-color: transparent;
 }
 
 .hamburger {
@@ -109,7 +110,7 @@ a {
 .languageSwitcher {
   margin-left: 1rem;
   margin-top: -1rem;
-  background-color: white;
+  background-color: transparent;
   padding: 0;
 }
 /* ui-dropdown-list */
@@ -225,7 +226,7 @@ p.ui-dropdown-list-trigger {
     display: none;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 740px) {
   .languageSwitcher {
     display: none;
   }
@@ -254,7 +255,7 @@ p.ui-dropdown-list-trigger {
 @media only screen and (max-width: 768px) {
   .navbar a {
     //color: black;
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 0.1em 1em;
   }
   .navbar.container {
@@ -263,7 +264,7 @@ p.ui-dropdown-list-trigger {
   }
   .nav-menu {
     position: fixed;
-    left: -100%;
+    left: 100%;
     top: 3rem;
     flex-direction: column;
     background-color: white;
@@ -273,12 +274,15 @@ p.ui-dropdown-list-trigger {
     font-size: 1.1rem;
     text-transform: uppercase;
     transition: 0.3s;
+    z-index: 999;
   }
 
   .nav-menu.active {
     left: 0;
   }
-
+  nav.scroll {
+    background-color: white;
+  }
   .nav-item {
     margin: 1.5rem 0;
   }
@@ -286,7 +290,7 @@ p.ui-dropdown-list-trigger {
   .hamburger {
     display: block;
     cursor: pointer;
-    margin-left: 9rem;
+    margin-left: 7.5rem;
   }
   @media (max-width: 375px) {
     .hamburger {

@@ -236,10 +236,18 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-button {
   display: none;
 }
-/*
+
 .wrapper {
-  background-image: url("");
+  background-image: url("/images/assets/wave.svg");
   background-position: top center;
   background-size: cover;
+}
+/*
+.noise-wrapper {
+  background-image: url("/images/assets/noise-texture.png");
+  background-position: top center;
+  background-size: auto;
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
 */

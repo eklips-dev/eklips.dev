@@ -82,18 +82,18 @@ a {
   text-decoration: none;
 }
 
-/* Sticky Nav */
+/* Sticky Nav
 .sticky {
   position: fixed;
   width: 100%;
   z-index: 999;
 }
-
+*/
 .logo {
   text-decoration: none;
   font-weight: bold;
   color: black;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 .logo span {
@@ -127,7 +127,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 1em;
-  background-color: white;
+  background-color: transparent;
 }
 
 .hamburger {
@@ -204,7 +204,7 @@ a {
 .languageSwitcher {
   margin-left: 1rem;
   margin-top: -1rem;
-  background-color: white;
+  background-color: transparent;
   padding: 0;
 }
 
@@ -327,7 +327,7 @@ p.ui-dropdown-list-trigger {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 740px) {
   .languageSwitcher {
     display: none;
   }
@@ -354,7 +354,7 @@ p.ui-dropdown-list-trigger {
 
 @media only screen and (max-width: 768px) {
   .navbar a {
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 0.1em 1em;
   }
   .navbar.container {
@@ -365,7 +365,7 @@ p.ui-dropdown-list-trigger {
   }
   .nav-menu {
     position: fixed;
-    left: -100%;
+    left: 100%;
     top: 3rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -379,9 +379,13 @@ p.ui-dropdown-list-trigger {
     text-transform: uppercase;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+    z-index: 999;
   }
   .nav-menu.active {
     left: 0;
+  }
+  nav.scroll {
+    background-color: white;
   }
   .nav-item {
     margin: 1.5rem 0;
@@ -389,7 +393,7 @@ p.ui-dropdown-list-trigger {
   .hamburger {
     display: block;
     cursor: pointer;
-    margin-left: 9rem;
+    margin-left: 7.5rem;
   }
 }
 
@@ -1059,11 +1063,19 @@ body::-webkit-scrollbar-button {
   display: none;
 }
 
-/*
 .wrapper {
-  background-image: url("");
+  background-image: url("/images/assets/wave.svg");
   background-position: top center;
   background-size: cover;
+}
+
+/*
+.noise-wrapper {
+  background-image: url("/images/assets/noise-texture.png");
+  background-position: top center;
+  background-size: auto;
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
 */
 /*# sourceMappingURL=main.css.map */

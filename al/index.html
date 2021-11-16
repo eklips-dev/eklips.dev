@@ -6,7 +6,7 @@
     <meta name="description" content="Web Design për biznese të vogla" />
     <meta
       name="keywords"
-      content="Web Design, Frontend, JavaScript, HTML, CSS"
+      content="Web Design, Web Dizanj Shqiperi, website per biznes, ecommerce, ecommerce albania, ecommerce shqiperi website"
     />
     <link
       rel="apple-touch-icon"
@@ -28,12 +28,37 @@
     <link rel="manifest" href="/images/favicon/site.webmanifest" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
+    <style>
+      .background--custom {
+        background-color: transparent;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        overflow: hidden;
+        z-index: -2;
+        top: 0;
+        left: 0;
+      }
+      canvas#canvas {
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 60%;
+        transform: rotate(-12deg) scale(2) translateY(-22%);
+        --gradient-color-1: #3ae2a1; 
+        --gradient-color-2: #03f4be; 
+        --gradient-color-3: #c1e381;  
+        --gradient-color-4: #29eef9;
+        --gradient-speed: 0.000008;
+      }
+    </style>
     <title>Perandor - Web Design Studio</title>
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
+    
     <header class="header">
-      <nav class="navbar sticky">
+      <nav class="navbar">
         <div class="nav-container ">
         <a class="logo" href="https://perandor.design/al/">PERANDOR<span>.DESIGN</span></a>
           <ul class="nav-menu">
@@ -83,6 +108,14 @@
         </div>
       </nav>
   </header>
+  <div class="background--custom">
+    <canvas id="canvas" />
+  </div>
+  <script src="https://cdn.jsdelivr.net/gh/greentfrapp/pocoloco@minigl/minigl.js"></script>
+  <script>
+  var gradient = new Gradient();
+  gradient.initGradient("#canvas");
+  </script>
     <section class="hero">
       <div class="container" data-animate-in="up" data-animate-in-delay="300">
         <div class="left-col">
@@ -246,7 +279,7 @@
     <div class="container">
       <hr class="style-eight">
     </div>
-    <section id="contact">
+    <section id="contact" class="wrapper">
       <div class="container">
       <div id="contact__info">
         <h2 id="contact__title" data-animate-in="up" data-animate-in-delay="300">
@@ -272,7 +305,7 @@
       </div>
     </section>
     <svg 
-    id="myBtn" stroke="currentColor" fill="var(--primary-color)" stroke-width="0" viewBox="0 0 512 512" 
+    id="myBtn" stroke="currentColor" fill="black" stroke-width="0" viewBox="0 0 512 512" 
     height="2.3em" width="2.3em" onclick="topFunction()"
     xmlns="http://www.w3.org/2000/svg">
     <path d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm231-113.9L103.5 277.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L256 226.9l101.6 101.6c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L273 142.1c-9.4-9.4-24.6-9.4-34 0z"></path>

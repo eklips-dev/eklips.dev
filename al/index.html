@@ -293,15 +293,27 @@
             Na kontaktoni dhe le të flasim më tej.
           </p>
         </div>
-        <div class="contact-section-cta" data-animate-in="up" data-animate-in-delay="300">
+        <!-- Contact Button
+        <div class="contact-section-cta">
           <a
             href="mailto:contact@perandor.design"
             target="_blank"
             rel="noopener noreferrer"
             class="contact-cta"
-            >Bashkëpunim</a
+            >Cooperate</a
           >
         </div>
+        -->
+        <div class="formbox">  
+          <form action="https://formspree.io/f/xrgrnoyv" id="contactform" method="POST">
+              <input type="text" placeholder="Your name">
+              <input type="email" placeholder="Your email">
+              <input type="hidden" name="_subject" value="Website contact" />
+              <textarea name="message" placeholder="Your message"></textarea>
+              <input type="text" name="_gotcha" style="display:none" />
+              <input type="submit" value="Send">
+          </form>
+          </div>
       </div>
     </section>
     <svg 

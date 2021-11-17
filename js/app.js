@@ -24,6 +24,7 @@ function topFunction() {
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
+const navBar = document.querySelector(".navbar");
 
 hamburger.addEventListener("click", mobileMenu);
 navLink.forEach((n) => n.addEventListener("click", closeMenu));
@@ -31,11 +32,13 @@ navLink.forEach((n) => n.addEventListener("click", closeMenu));
 function mobileMenu() {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
+  navBar.classList.toggle("bg-scrolling");
 }
 
 function closeMenu() {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
+  navBar.classList.remove("bg-scrolling");
 }
 
 // show language dropdowns

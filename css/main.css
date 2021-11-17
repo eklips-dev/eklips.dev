@@ -1182,13 +1182,12 @@ body::-webkit-scrollbar-button {
   display: none;
 }
 
+/*
 .wrapper {
   background-image: url("");
   background-position: top center;
   background-size: cover;
 }
-
-/*
 .noise-wrapper {
   background-image: url("/images/assets/noise-texture.png");
   background-position: top center;

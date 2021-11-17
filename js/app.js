@@ -32,13 +32,13 @@ navLink.forEach((n) => n.addEventListener("click", closeMenu));
 function mobileMenu() {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
-  navBar.classList.toggle("bg-scrolling");
+  navBar.classList.toggle("nav-bg-active");
 }
 
 function closeMenu() {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
-  navBar.classList.remove("bg-scrolling");
+  navBar.classList.remove("nav-bg-active");
 }
 
 // show language dropdowns

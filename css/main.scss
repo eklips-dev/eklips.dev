@@ -76,15 +76,17 @@ section {
       transition: background 0.2s ease-in-out;
     }
   }
-
-  img {
-    margin-right: 0.5em;
-  }
 }
 
 .hero-img {
   width: 30%;
   margin-top: 3em;
+}
+
+.main-img {
+  width: 30%;
+  margin-top: 3em;
+  margin-right: -0.5em;
 }
 
 h2 {
@@ -238,7 +240,7 @@ body::-webkit-scrollbar-button {
 }
 
 .wrapper {
-  background-image: url("/images/assets/wave.svg");
+  background-image: url("");
   background-position: top center;
   background-size: cover;
 }

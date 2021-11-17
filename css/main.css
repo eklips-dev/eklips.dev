@@ -114,7 +114,6 @@ form textarea,
   margin-bottom: 1.5rem;
   color: black;
   font-weight: 700;
-  border-radius: 7px;
 }
 
 form input:focus,
@@ -175,6 +174,22 @@ form [type="reset"]:focus {
 
 form select {
   text-transform: none;
+}
+
+.formbox {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: black;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 11px 16px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 11px 16px 0px rgba(0, 0, 0, 0.3);
+  -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  background-color: white;
+  margin: 20px 35px 20px 35px;
+  padding: 5% 5% 5% 5%;
 }
 
 li {
@@ -989,6 +1004,10 @@ section {
   letter-spacing: 0.3em;
 }
 
+.left-col .hero-subhead {
+  color: white;
+}
+
 .left-col h1 {
   font-size: 2.5em;
   line-height: 1.3em;
@@ -1096,6 +1115,9 @@ hr.style-eight:after {
     padding-top: 6.5rem;
   }
   .hero-img {
+    display: none;
+  }
+  .main-img {
     display: none;
   }
   .hero-cta {

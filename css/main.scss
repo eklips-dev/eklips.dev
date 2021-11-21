@@ -8,6 +8,16 @@
 
 :root {
   --primary-color: #5722cd;
+  --text-color: #425466;
+  --header-title-color: #3a3a3a;
+  --title-color: #0a2540;
+  --accent-color: #635bff;
+  --button-color: #0a2540;
+  --button-hover-color: #635bff;
+  --buttonDisabledOpacity: 0.7;
+  --linkHoverOpacity: 0.6;
+  --link-color: #0a2540;
+  --linkHoverColor: #0a2540;
 }
 
 html {
@@ -52,31 +62,33 @@ section {
   .subhead {
     text-transform: uppercase;
     font-weight: bold;
-    color: gray;
+    color: var(--accent-color);
     letter-spacing: 0.3em;
   }
 
   .hero-subhead {
-    color: white;
+    color: var(--title-color);
   }
 
   h1 {
     font-size: 2.5em;
     line-height: 1.3em;
     margin-top: 0.2em;
+    color: var(--header-title-color);
   }
 
   .primary-cta {
-    background: var(--primary-color);
+    background: var(--button-color);
     color: white;
     text-decoration: none;
-    padding: 0.6em 1.3em;
-    font-size: 1.4em;
+    padding: 0.4em 1em;
+    font-size: 1.3em;
     border-radius: 5em;
     font-weight: bold;
     display: inline-block;
     &:hover {
-      background: #4617ac;
+      //background: var(--button-hover-color);
+      opacity: var(--buttonDisabledOpacity);
       transition: background 0.2s ease-in-out;
     }
   }
@@ -95,9 +107,11 @@ section {
 
 h2 {
   font-size: 3em;
+  color: var(--header-title-color);
 }
 h3 {
   font-weight: 400;
+  color: var(--text-color);
 }
 hr.style-eight {
   overflow: visible; /* For IE */
@@ -131,22 +145,17 @@ hr.style-eight:after {
   margin: 0 auto;
 }
 .error-btn {
-  background: var(--primary-color);
+  background: var(--button-color);
   color: white;
   text-decoration: none;
   border-radius: 2em;
   font-weight: bold;
   display: inline-block;
   &:hover {
-    background: #4617ac;
+    //background: var(--button-hover-color);
+    opacity: var(--buttonDisabledOpacity);
     transition: background 0.2s ease-in-out;
   }
-}
-
-.about-h3 {
-  font-size: 1.5rem;
-  color: var(--primary-color);
-  font-weight: bold;
 }
 
 .about-h2 {
@@ -219,6 +228,9 @@ hr.style-eight:after {
   right: 2.1875rem;
   z-index: 99;
   cursor: pointer;
+  &:hover {
+    opacity: var(--buttonDisabledOpacity);
+  }
 }
 
 /* Customize website's scrollbar like Mac OS

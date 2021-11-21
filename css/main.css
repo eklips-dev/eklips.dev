@@ -11,7 +11,7 @@
 }
 
 #contact__title {
-  color: var(--primary-color);
+  color: var(--title-color);
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 4.5rem;
@@ -21,6 +21,7 @@
 #contact__subtext {
   font-size: 1.5rem;
   font-weight: 700;
+  color: var(--text-color);
 }
 
 @media (min-width: 87.5em) {
@@ -30,7 +31,7 @@
 }
 
 .contact-cta {
-  background: var(--primary-color);
+  background: var(--button-color);
   color: white;
   text-decoration: none;
   padding: 1rem 3.5rem;
@@ -41,7 +42,7 @@
 }
 
 .contact-cta:hover {
-  background: #4617ac;
+  opacity: var(--buttonDisabledOpacity);
   -webkit-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
 }
@@ -108,7 +109,6 @@ form textarea,
 .StripeElement {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.9);
   padding: 0.75em 1rem;
   margin-bottom: 1.5rem;
@@ -143,8 +143,8 @@ form [type="reset"] {
   -moz-appearance: button;
   appearance: button;
   padding: 12px 24px;
-  background-color: white;
-  color: black;
+  background-color: var(--button-color);
+  color: white;
   border-radius: 7px;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.2, 0.8, 0.4, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.2, 0.8, 0.4, 1);
@@ -157,6 +157,7 @@ form [type="submit"]:hover,
 form [type="reset"]:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  opacity: var(--buttonDisabledOpacity);
 }
 
 form [type="button"]:active,
@@ -177,12 +178,11 @@ form select {
 }
 
 .formbox {
-  border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: black;
+  border-color: var(--button-color);
   border-radius: 7px;
-  -webkit-box-shadow: 0px 11px 16px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 11px 16px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 9px 14px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 9px 14px 0px rgba(0, 0, 0, 0.3);
   -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
@@ -212,6 +212,10 @@ a {
   font-weight: bold;
   color: black;
   font-size: 1.3em;
+}
+
+.logo:hover {
+  opacity: var(--buttonDisabledOpacity);
 }
 
 .logo span {
@@ -281,30 +285,27 @@ a {
 .nav-link {
   font-size: 1rem;
   font-weight: 700;
-  color: black;
+  color: var(--title-color);
 }
 
 .nav-link:hover {
-  color: var(--primary-color);
+  opacity: var(--buttonDisabledOpacity);
 }
 
 .go-premium-cta a {
-  color: var(--primary-color);
-  border: 3px solid var(--primary-color);
+  color: var(--button-color);
+  border: 3px solid var(--button-color);
   font-weight: bold;
   border-radius: 5em;
   margin-top: -0.2em;
   margin-left: 2.5rem;
   padding: 0.2rem 1rem;
-}
-
-.go-premium-cta a:hover {
-  background: var(--primary-color);
+  background: var(--button-color);
   color: white;
 }
 
-.current {
-  color: var(--primary-color);
+.go-premium-cta a:hover {
+  opacity: var(--buttonDisabledOpacity);
 }
 
 .bg-scrolling {
@@ -358,7 +359,7 @@ p.ui-dropdown-list-trigger {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid #000000;
+  border-top: 5px solid var(--title-color);
 }
 
 .ui-dropdown-list-trigger strong,
@@ -369,7 +370,7 @@ p.ui-dropdown-list-trigger {
   padding: 6px 3px;
   font-size: 13px;
   line-height: 13px;
-  color: #000;
+  color: var(--title-color);
   font-weight: normal;
 }
 
@@ -408,7 +409,7 @@ p.ui-dropdown-list-trigger {
 }
 
 .ui-dropdown-list.active strong:after {
-  border-top-color: #000;
+  border-top-color: var(--title-color);
 }
 
 .ui-dropdown-list strong {
@@ -420,12 +421,12 @@ p.ui-dropdown-list-trigger {
 }
 
 .ui-dropdown-list strong:hover {
-  border-color: #000;
+  border-color: var(--title-color);
 }
 
 .ui-dropdown-list.active strong {
   border-style: solid;
-  border-color: #000;
+  border-color: var(--title-color);
   border-width: 1px 1px 0 1px;
   -webkit-transition: 0s;
   transition: 0s;
@@ -433,7 +434,7 @@ p.ui-dropdown-list-trigger {
 
 .ui-dropdown-list.active ul {
   border-style: solid;
-  border-color: #000;
+  border-color: var(--title-color);
   border-width: 0 1px 1px 1px;
 }
 
@@ -466,7 +467,7 @@ p.ui-dropdown-list-trigger {
     margin-bottom: 1rem;
     border-top: 2px solid black;
     border-top-width: 5px;
-    color: black;
+    color: var(--text-color);
     padding-top: 0.5rem;
   }
   .lang-mobile:hover {
@@ -689,7 +690,7 @@ p.ui-dropdown-list-trigger {
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #7a7a7a;
+  color: var(--text-color);
 }
 
 a {
@@ -763,7 +764,7 @@ ol {
 .project-content .subhead {
   text-transform: uppercase;
   font-weight: bold;
-  color: gray;
+  color: var(--accent-color);
   letter-spacing: 0.3em;
 }
 
@@ -771,7 +772,7 @@ ol {
   text-transform: uppercase;
   font-size: 3rem;
   margin: 0.625rem 0 1.875rem;
-  color: var(--primary-color);
+  color: var(--link-color);
   line-height: 1;
 }
 
@@ -782,7 +783,8 @@ ol {
 }
 
 .project-content .project-details p {
-  background-color: #252525;
+  background-color: var(--title-color);
+  opacity: var(--buttonDisabledOpacity);
   padding: 1.25rem 1.5625rem;
 }
 
@@ -805,14 +807,15 @@ ol {
 
 .project-content .project-details ul li {
   margin-right: 1.25rem;
-  color: white;
-  font-weight: 700;
-  border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: black;
   border-radius: 0.2rem;
   padding: 0.5rem;
-  background-color: black;
+  background-color: var(--button-color);
+  cursor: pointer;
+}
+
+.project-content .project-details ul li:hover {
+  opacity: var(--buttonDisabledOpacity);
 }
 
 .project-content .project-details ul a {
@@ -960,6 +963,16 @@ ol {
 
 :root {
   --primary-color: #5722cd;
+  --text-color: #425466;
+  --header-title-color: #3a3a3a;
+  --title-color: #0a2540;
+  --accent-color: #635bff;
+  --button-color: #0a2540;
+  --button-hover-color: #635bff;
+  --buttonDisabledOpacity: 0.7;
+  --linkHoverOpacity: 0.6;
+  --link-color: #0a2540;
+  --linkHoverColor: #0a2540;
 }
 
 html {
@@ -1004,33 +1017,34 @@ section {
 .left-col .subhead {
   text-transform: uppercase;
   font-weight: bold;
-  color: gray;
+  color: var(--accent-color);
   letter-spacing: 0.3em;
 }
 
 .left-col .hero-subhead {
-  color: white;
+  color: var(--title-color);
 }
 
 .left-col h1 {
   font-size: 2.5em;
   line-height: 1.3em;
   margin-top: 0.2em;
+  color: var(--header-title-color);
 }
 
 .left-col .primary-cta {
-  background: var(--primary-color);
+  background: var(--button-color);
   color: white;
   text-decoration: none;
-  padding: 0.6em 1.3em;
-  font-size: 1.4em;
+  padding: 0.4em 1em;
+  font-size: 1.3em;
   border-radius: 5em;
   font-weight: bold;
   display: inline-block;
 }
 
 .left-col .primary-cta:hover {
-  background: #4617ac;
+  opacity: var(--buttonDisabledOpacity);
   -webkit-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
 }
@@ -1048,10 +1062,12 @@ section {
 
 h2 {
   font-size: 3em;
+  color: var(--header-title-color);
 }
 
 h3 {
   font-weight: 400;
+  color: var(--text-color);
 }
 
 hr.style-eight {
@@ -1090,7 +1106,7 @@ hr.style-eight:after {
 }
 
 .error-btn {
-  background: var(--primary-color);
+  background: var(--button-color);
   color: white;
   text-decoration: none;
   border-radius: 2em;
@@ -1099,15 +1115,9 @@ hr.style-eight:after {
 }
 
 .error-btn:hover {
-  background: #4617ac;
+  opacity: var(--buttonDisabledOpacity);
   -webkit-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
-}
-
-.about-h3 {
-  font-size: 1.5rem;
-  color: var(--primary-color);
-  font-weight: bold;
 }
 
 .about-h2 {
@@ -1182,6 +1192,10 @@ hr.style-eight:after {
   right: 2.1875rem;
   z-index: 99;
   cursor: pointer;
+}
+
+#myBtn:hover {
+  opacity: var(--buttonDisabledOpacity);
 }
 
 /* Customize website's scrollbar like Mac OS

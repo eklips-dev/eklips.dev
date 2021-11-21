@@ -17,6 +17,9 @@ a {
   font-weight: bold;
   color: black;
   font-size: 1.3em;
+  &:hover {
+    opacity: var(--buttonDisabledOpacity);
+  }
 
   span {
     color: var(--primary-color);
@@ -68,30 +71,26 @@ a {
 .nav-link {
   font-size: 1rem;
   font-weight: 700;
-  color: black;
+  color: var(--title-color);
 }
 
 .nav-link:hover {
-  color: var(--primary-color);
+  opacity: var(--buttonDisabledOpacity);
 }
 
 .go-premium-cta a {
-  color: var(--primary-color);
-  border: 3px solid var(--primary-color);
+  color: var(--button-color);
+  border: 3px solid var(--button-color);
   font-weight: bold;
   border-radius: 5em;
   margin-top: -0.2em;
   margin-left: 2.5rem;
   padding: 0.2rem 1rem;
-
+  background: var(--button-color);
+  color: white;
   &:hover {
-    background: var(--primary-color);
-    color: white;
+    opacity: var(--buttonDisabledOpacity);
   }
-}
-
-.current {
-  color: var(--primary-color);
 }
 
 .bg-scrolling {
@@ -145,7 +144,7 @@ p.ui-dropdown-list-trigger {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid #000000;
+  border-top: 5px solid var(--title-color);
 }
 
 .ui-dropdown-list-trigger strong,
@@ -156,7 +155,7 @@ p.ui-dropdown-list-trigger {
   padding: 6px 3px;
   font-size: 13px;
   line-height: 13px;
-  color: #000;
+  color: var(--title-color);
   font-weight: normal;
 }
 
@@ -195,7 +194,7 @@ p.ui-dropdown-list-trigger {
 }
 
 .ui-dropdown-list.active strong:after {
-  border-top-color: #000;
+  border-top-color: var(--title-color);
 }
 .ui-dropdown-list strong {
   border-style: solid;
@@ -204,18 +203,18 @@ p.ui-dropdown-list-trigger {
   transition: 0.3s;
 }
 .ui-dropdown-list strong:hover {
-  border-color: #000;
+  border-color: var(--title-color);
 }
 
 .ui-dropdown-list.active strong {
   border-style: solid;
-  border-color: #000;
+  border-color: var(--title-color);
   border-width: 1px 1px 0 1px;
   transition: 0s;
 }
 .ui-dropdown-list.active ul {
   border-style: solid;
-  border-color: #000;
+  border-color: var(--title-color);
   border-width: 0 1px 1px 1px;
 }
 
@@ -246,7 +245,7 @@ p.ui-dropdown-list-trigger {
     margin-bottom: 1rem;
     border-top: 2px solid black;
     border-top-width: 5px;
-    color: black;
+    color: var(--text-color);
     padding-top: 0.5rem;
   }
 

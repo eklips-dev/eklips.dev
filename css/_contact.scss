@@ -9,7 +9,7 @@
 }
 
 #contact__title {
-  color: var(--primary-color);
+  color: var(--title-color);
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 4.5rem;
@@ -19,6 +19,7 @@
 #contact__subtext {
   font-size: 1.5rem;
   font-weight: 700;
+  color: var(--text-color);
 }
 @include breakpoint-up(xlarge) {
   #contact__subtext {
@@ -27,7 +28,7 @@
 }
 
 .contact-cta {
-  background: var(--primary-color);
+  background: var(--button-color);
   color: white;
   text-decoration: none;
   padding: 1rem 3.5rem;
@@ -36,7 +37,7 @@
   font-weight: bold;
   display: inline-block;
   &:hover {
-    background: #4617ac;
+    opacity: var(--buttonDisabledOpacity);
     transition: background 0.2s ease-in-out;
   }
 }
@@ -101,7 +102,7 @@ form select,
 form textarea,
 .StripeElement {
   box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  //border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.9);
   padding: 0.75em 1rem;
   margin-bottom: 1.5rem;
@@ -134,13 +135,14 @@ form [type="reset"] {
   -moz-appearance: button;
   appearance: button;
   padding: 12px 24px;
-  background-color: white;
-  color: black;
+  background-color: var(--button-color);
+  color: white;
   border-radius: 7px;
   transition: transform 250ms cubic-bezier(0.2, 0.8, 0.4, 1);
 
   &:hover {
     transform: scale(1.1);
+    opacity: var(--buttonDisabledOpacity);
   }
 
   &:active {
@@ -159,11 +161,11 @@ form select {
 }
 
 .formbox {
-  border-style: solid;
+  //border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: black;
+  border-color: var(--button-color);
   border-radius: 7px;
-  box-shadow: 0px 11px 16px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 9px 14px 0px rgba(0, 0, 0, 0.3);
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   background-color: white;
   margin: 20px 35px 20px 35px;

@@ -9,11 +9,13 @@
 }
 
 #contact__title {
-  color: var(--title-color);
+  background: -webkit-linear-gradient(var(--accent-color), var(--title-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 4.5rem;
-  line-height: 0.3vw;
+  //line-height: 0.3vw;
 }
 
 #contact__subtext {

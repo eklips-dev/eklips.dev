@@ -211,7 +211,7 @@ a {
 .logo {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: var(--title-color);
   font-size: 1.3em;
 }
 

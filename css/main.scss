@@ -18,6 +18,7 @@
   --linkHoverOpacity: 0.6;
   --link-color: #0a2540;
   --linkHoverColor: #0a2540;
+  --bg-color: #f2f2f2;
 }
 
 html {
@@ -25,12 +26,14 @@ html {
   overflow-x: hidden;
 }
 body {
-  background: #f2f2f2;
+  background: var(--bg-color);
   margin: 0;
   font-family: "Poppins";
   overflow-x: hidden;
 }
-
+#bg-white {
+  background: white;
+}
 .hero .container {
   padding-top: 2rem;
 }
@@ -168,6 +171,9 @@ hr.style-eight:after {
   .hero-img {
     display: none;
   }
+  .hero-vid {
+    display: none;
+  }
   .main-img {
     display: none;
   }
@@ -211,6 +217,11 @@ hr.style-eight:after {
     margin-right: 0.1em;
   }
 
+  .hero-vid {
+    width: 50%;
+    margin-right: 0.1em;
+  }
+
   .hero-cta {
     display: flex;
   }
@@ -218,7 +229,11 @@ hr.style-eight:after {
     margin-right: 1em;
   }
 }
-
+.hero-vid {
+  width: 40%;
+  margin-top: 3em;
+  //overflow: hidden;
+}
 /* Sroll back to top button */
 #myBtn {
   background-color: transparent;

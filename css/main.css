@@ -1113,6 +1113,8 @@ hr.style-eight:after {
   font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .error-page-head {
@@ -1120,6 +1122,9 @@ hr.style-eight:after {
   font-weight: 700;
   padding: 0;
   margin: 0 auto;
+  background: -webkit-linear-gradient(#ffffff, #6284ff, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .error-btn {
@@ -1129,6 +1134,7 @@ hr.style-eight:after {
   border-radius: 2em;
   font-weight: bold;
   display: inline-block;
+  margin-top: 2rem;
 }
 
 .error-btn:hover {

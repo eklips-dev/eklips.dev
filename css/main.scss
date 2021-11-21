@@ -68,7 +68,7 @@ section {
 }
 
 .gradient-text-typerwriter {
-  background: -webkit-linear-gradient(white, whitesmoke);
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -76,12 +76,12 @@ section {
   .subhead {
     text-transform: uppercase;
     font-weight: bold;
-    color: var(--accent-color);
+    color: white;
     letter-spacing: 0.3em;
   }
 
   .hero-subhead {
-    color: var(--title-color);
+    color: white;
   }
 
   h1 {

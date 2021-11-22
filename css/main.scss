@@ -75,6 +75,7 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .left-col {
   .subhead {
     text-transform: uppercase;
@@ -118,7 +119,7 @@ section {
 
 .main-img {
   width: 30%;
-  margin-top: 3em;
+  margin-top: 1em;
   margin-right: -0.5em;
 }
 
@@ -129,6 +130,8 @@ h2 {
 h3 {
   font-weight: 400;
   color: var(--text-color);
+  margin-left: 10px;
+  margin-right: 10px;
 }
 hr.style-eight {
   overflow: visible; /* For IE */
@@ -183,10 +186,12 @@ hr.style-eight:after {
 
 .about-h2 {
   line-height: 1.3em;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 @include breakpoint-down(small) {
   .hero .container {
-    padding-top: 6.5rem;
+    padding-top: 5.5rem;
   }
   .hero-img {
     display: none;
@@ -223,7 +228,7 @@ hr.style-eight:after {
     text-align: left;
 
     .left-col {
-      margin: 3em 3em 0 5em;
+      margin: 2em 2em 0 3em;
 
       h1 {
         font-size: 3em;

@@ -122,7 +122,7 @@ form textarea,
 .StripeElement {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: transparent;
   padding: 0.75em 1rem;
   margin-bottom: 1.5rem;
   color: var(--title-color);
@@ -133,10 +133,10 @@ form input:focus,
 form select:focus,
 form textarea:focus,
 .StripeElement:focus {
-  background-color: white;
+  background-color: transparent;
   outline-style: solid;
   outline-width: thin;
-  outline-color: white;
+  outline-color: transparent;
   outline-offset: -1px;
 }
 
@@ -193,13 +193,11 @@ form select {
 .formbox {
   border-width: 1px 1px 1px 1px;
   border-radius: 7px;
-  -webkit-box-shadow: 0px 9px 14px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 9px 14px 0px rgba(0, 0, 0, 0.3);
-  -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
   background-color: white;
+  background-image: url(/assets/img/strips.PNG);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: 100% 0%;
   margin: 0 auto;
   padding: 5% 5% 5% 5%;
 }
@@ -1026,6 +1024,10 @@ body {
 
 a {
   color: #444444;
+}
+
+p {
+  margin: 0px 0px 16px 0px;
 }
 
 ul {

@@ -18,7 +18,7 @@
   --linkHoverOpacity: 0.6;
   --link-color: #0a2540;
   --linkHoverColor: #0a2540;
-  --bg-color: #f2f2f2;
+  --bg-color: #f8f8ff;
 }
 
 html {
@@ -303,3 +303,60 @@ body::-webkit-scrollbar-button {
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
 */
+
+/* Text Slider */
+.slider-wrapper {
+  font-size: 40px;
+  color: #aaa;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider {
+  height: 70px;
+  //padding-left: 15px;
+  overflow: hidden;
+}
+.slider div {
+  //color: #fff;
+  height: 60px;
+  margin-bottom: 40px;
+  //padding: 2px 15px;
+  //text-align: center;
+  box-sizing: border-box;
+}
+.slider-text1 {
+  //background: lightgreen;
+  animation: slide 6s linear infinite;
+}
+.slider-text2 {
+  //background: skyblue;
+}
+.slider-text3 {
+  //background: lightcoral;
+}
+@keyframes slide {
+  0% {
+    margin-top: -300px;
+  }
+  5% {
+    margin-top: -200px;
+  }
+  33% {
+    margin-top: -200px;
+  }
+  38% {
+    margin-top: -100px;
+  }
+  66% {
+    margin-top: -100px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}

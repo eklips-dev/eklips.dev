@@ -531,7 +531,7 @@ p.ui-dropdown-list-trigger {
   .hamburger {
     display: block;
     cursor: pointer;
-    margin-left: 6.5rem;
+    margin-left: 7.5rem;
   }
 }
 
@@ -703,6 +703,22 @@ p.ui-dropdown-list-trigger {
   font-weight: 400;
   line-height: 1.5;
   color: var(--text-color);
+}
+
+.features-wrapper {
+  width: 100%;
+  padding: 60px 0 60px;
+  background-color: transparent;
+  background-image: url(/assets/img/footer-lines.svg);
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: 100% 0%;
+}
+
+@media (max-width: 39.9375em) {
+  .features-wrapper {
+    background-size: 50%;
+  }
 }
 
 a {
@@ -985,7 +1001,7 @@ ol {
   --linkHoverOpacity: 0.6;
   --link-color: #0a2540;
   --linkHoverColor: #0a2540;
-  --bg-color: #f2f2f2;
+  --bg-color: #f8f8ff;
 }
 
 html {
@@ -1285,4 +1301,85 @@ body::-webkit-scrollbar-button {
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
 */
+/* Text Slider */
+.slider-wrapper {
+  font-size: 40px;
+  color: #aaa;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider {
+  height: 70px;
+  overflow: hidden;
+}
+
+.slider div {
+  height: 60px;
+  margin-bottom: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.slider-text1 {
+  -webkit-animation: slide 6s linear infinite;
+          animation: slide 6s linear infinite;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    margin-top: -300px;
+  }
+  5% {
+    margin-top: -200px;
+  }
+  33% {
+    margin-top: -200px;
+  }
+  38% {
+    margin-top: -100px;
+  }
+  66% {
+    margin-top: -100px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    margin-top: -300px;
+  }
+  5% {
+    margin-top: -200px;
+  }
+  33% {
+    margin-top: -200px;
+  }
+  38% {
+    margin-top: -100px;
+  }
+  66% {
+    margin-top: -100px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

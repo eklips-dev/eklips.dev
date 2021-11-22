@@ -28,30 +28,30 @@
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
-    <style>
-      .background--custom {
-        background-color: transparent;
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        overflow: hidden;
-        z-index: -2;
-        top: 0;
-        left: 0;
-      }
-      canvas#canvas {
-        z-index: -1;
-        position: absolute;
-        width: 100%;
-        height: 60%;
-        transform: rotate(-12deg) scale(2) translateY(-22%);
-        --gradient-color-1: #3ae2a1; 
-        --gradient-color-2: #03f4be; 
-        --gradient-color-3: #c1e381;  
-        --gradient-color-4: #29eef9;
-        --gradient-speed: 0.000008;
-      }
-    </style>
+        <style>
+          .background--custom {
+            background-color: transparent;
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            overflow: hidden;
+            z-index: -2;
+            top: 0;
+            left: 0;
+          }
+          canvas#canvas {
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            height: 60%;
+            transform: rotate(-12deg) scale(2) translateY(-22%);
+            --gradient-color-1: #a960ee; 
+            --gradient-color-2: #ff333d; 
+            --gradient-color-3: #90e0ff;  
+            --gradient-color-4: #ffcb57;
+            --gradient-speed: 0.000009;
+          }
+        </style>
     <title>Perandor | Web Development &amp; Design Studio</title>
     <link rel="stylesheet" href="/css/main.css" />
   </head>
@@ -60,7 +60,7 @@
     <header class="header">
       <nav class="navbar">
         <div class="nav-container ">
-        <a class="logo" href="https://perandor.design/al/">PERANDOR<span>.DESIGN</span></a>
+        <a class="logo" href="https://perandor.design/al/">perandor<span>.design</span></a>
           <ul class="nav-menu">
             <li class="nav-item">
               <a href="https://perandor.design/al/" class="nav-link">Kreu</a>
@@ -89,15 +89,14 @@
               <li class="languageSwitcher">
                 <div id="lang-switcher" class="ui-dropdown-list">
 					<p class="ui-dropdown-list-trigger de">
-            <strong>AL</strong>
-            
-  </p>
+            <strong>AL</strong>  
+          </p>
 					<ul>
             <li><a href="https://perandor.design/" title="English Version">EN</a></li>
 					</ul>
 				</div>
-              </li>
-          </ul>
+      </li>
+    </ul>
           <div class="hamburger">
               <span class="bar"></span>
               <span class="bar"></span>
@@ -120,12 +119,11 @@
           <p class="subhead">Web Dizanj &amp; Zhvillim për biznese të vogla</p>
           <h1>Ofrojmë faqe interneti të koduara me
             <br>
-            <span
-            class="txt-rotate gradient-text-typerwriter"
-            data-period="2000"
-            data-rotate='[ "rezultat superior", "dizanj perfekt", "fokus tek detajet"]'
-          ></span>
-
+              <div class="slider">
+                  <div class="slider-text1 gradient-text">dizanj perfekt</div>
+                  <div class="slider-text2 gradient-text">rezultat superior</div>
+                  <div class="slider-text3 gradient-text">fokus tek detajet</div>
+              </div>
           </h1>
 
           <div class="hero-cta">
@@ -147,7 +145,7 @@
         />
       </div>
     </section>
-    <section class="features features-container" id="services">
+    <section class="features features-container features-wrapper" id="services">
       <div class="container">
       <div class="features__grid">
         <div class="features__item" data-animate-in="up" data-animate-in-delay="300">
@@ -295,7 +293,9 @@
     <path d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm231-113.9L103.5 277.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L256 226.9l101.6 101.6c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L273 142.1c-9.4-9.4-24.6-9.4-34 0z"></path>
   </svg>
 <script src="/js/app.js"></script>
-<script src="/js/typerwriter.js"></script>
+<!--
+<script src="js/typerwriter.js"></script>
+-->
 
   </body>
 </html>

@@ -116,9 +116,11 @@ form textarea,
 .StripeElement {
   box-sizing: border-box;
   //border: 1px solid rgba(0, 0, 0, 0.2);
-  background-color: transparent;
+  background-color: white;
+  z-index: -999;
   padding: 0.75em 1rem;
   margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
   color: var(--title-color);
   font-weight: 700;
   //border-radius: 7px;
@@ -127,7 +129,8 @@ form input:focus,
 form select:focus,
 form textarea:focus,
 .StripeElement:focus {
-  background-color: transparent;
+  background-color: white;
+  opacity: 0.95;
   outline-style: solid;
   outline-width: thin;
   outline-color: transparent;
@@ -148,8 +151,8 @@ form [type="reset"] {
   -moz-appearance: button;
   appearance: button;
   padding: 12px 24px;
-  background-color: var(--button-color);
-  color: white;
+  background-color: white;
+  color: black;
   border-radius: 7px;
   transition: transform 250ms cubic-bezier(0.2, 0.8, 0.4, 1);
 
@@ -180,7 +183,7 @@ form select {
   border-radius: 7px;
   //box-shadow: 0px 9px 14px 0px rgba(0, 0, 0, 0.3);
   //transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  background-color: white;
+  background-color: transparent;
   background-image: url(/assets/img/strips.PNG);
   background-repeat: no-repeat;
   background-size: 30%;

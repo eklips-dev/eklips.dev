@@ -140,24 +140,6 @@ h3 {
   margin-left: 10px;
   margin-right: 10px;
 }
-hr.style-eight {
-  overflow: visible; /* For IE */
-  padding: 0;
-  border: none;
-  border-top: medium double #333;
-  color: #333;
-  text-align: center;
-  width: 85%;
-}
-hr.style-eight:after {
-  content: "§";
-  display: inline-block;
-  position: relative;
-  top: -0.7em;
-  font-size: 1.5em;
-  padding: 0 0.25em;
-  background: transparent;
-}
 
 .error-page {
   font-size: 4rem;
@@ -365,3 +347,82 @@ body::-webkit-scrollbar-button {
     margin-top: 0px;
   }
 }
+
+/* hr divider */
+.divider {
+  position: relative;
+  margin-top: 40px;
+  height: 1px;
+}
+
+.div-transparent:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    rgb(48, 49, 51),
+    transparent
+  );
+}
+
+.div-dot:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -9px;
+  left: calc(50% - 9px);
+  width: 18px;
+  height: 18px;
+  background-color: var(--title-color);
+  //border: 1px solid rgb(48, 49, 51);
+  border-radius: 50%;
+  //box-shadow: inset 0 0 0 2px white, 0 0 0 4px white;
+}
+
+/* Scroll down indicator animation 
+.scroll-container {
+  width: 30px;
+  height: 60px;
+  border: 3px solid var(--link-color);
+  border-radius: 15px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.scroller {
+  width: 18px;
+  border-radius: 8px;
+  background-color: var(--link-color);
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  bottom: 34px;
+  animation: scroller 1500ms ease-out infinite;
+}
+
+@keyframes scroller {
+  0% {
+    bottom: 34px;
+  }
+  5% {
+    top: 4px;
+  }
+  32% {
+    bottom: 4px;
+  }
+  66% {
+    top: 34px;
+    bottom: 4px;
+  }
+  100% {
+    top: 4px;
+    bottom: 34px;
+  }
+}
+*/

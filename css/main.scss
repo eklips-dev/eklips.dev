@@ -63,7 +63,13 @@ section {
   padding: 0;
   margin: 0 auto;
 }
-
+.about-subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .gradient-text {
   background: -webkit-linear-gradient(var(--accent-color), var(--title-color));
   -webkit-background-clip: text;
@@ -89,9 +95,10 @@ section {
   }
 
   h1 {
-    font-size: 2.5em;
+    font-size: 2.4em;
     line-height: 1.3em;
     margin-top: 0.2em;
+    margin-bottom: 2rem;
     color: var(--header-title-color);
   }
 
@@ -99,7 +106,7 @@ section {
     background: var(--button-color);
     color: white;
     text-decoration: none;
-    padding: 0.4em 1em;
+    padding: 0.4em 1.5em;
     font-size: 1.3em;
     border-radius: 5em;
     font-weight: bold;
@@ -203,13 +210,13 @@ hr.style-eight:after {
     display: none;
   }
   .hero-cta {
-    padding-top: 4rem;
+    padding-top: 2.5rem;
   }
   .left-col .primary-cta {
     padding: 1rem 3.5rem;
   }
   .left-col h1 {
-    padding-top: 2rem;
+    padding-top: 4rem;
   }
 }
 @include breakpoint-up(large) {
@@ -231,7 +238,7 @@ hr.style-eight:after {
       margin: 2em 2em 0 3em;
 
       h1 {
-        font-size: 3em;
+        font-size: 3.7em;
         width: 90%;
       }
     }
@@ -328,22 +335,12 @@ body::-webkit-scrollbar-button {
   overflow: hidden;
 }
 .slider div {
-  //color: #fff;
-  height: 60px;
-  margin-bottom: 40px;
-  //padding: 2px 15px;
-  //text-align: center;
+  height: 70px;
+  margin-bottom: 30px;
   box-sizing: border-box;
 }
 .slider-text1 {
-  //background: lightgreen;
   animation: slide 6s linear infinite;
-}
-.slider-text2 {
-  //background: skyblue;
-}
-.slider-text3 {
-  //background: lightcoral;
 }
 @keyframes slide {
   0% {

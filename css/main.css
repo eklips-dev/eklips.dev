@@ -200,6 +200,7 @@ form select {
   background-position: 100% 0%;
   margin: 0 auto;
   padding: 5% 5% 5% 5%;
+  opacity: 0.95;
 }
 
 li {
@@ -1049,6 +1050,14 @@ section {
   margin: 0 auto;
 }
 
+.about-subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .gradient-text {
   background: -webkit-linear-gradient(var(--accent-color), var(--title-color));
   -webkit-background-clip: text;
@@ -1074,9 +1083,10 @@ section {
 }
 
 .left-col h1 {
-  font-size: 2.5em;
+  font-size: 2.4em;
   line-height: 1.3em;
   margin-top: 0.2em;
+  margin-bottom: 2rem;
   color: var(--header-title-color);
 }
 
@@ -1084,7 +1094,7 @@ section {
   background: var(--button-color);
   color: white;
   text-decoration: none;
-  padding: 0.4em 1em;
+  padding: 0.4em 1.5em;
   font-size: 1.3em;
   border-radius: 5em;
   font-weight: bold;
@@ -1195,13 +1205,13 @@ hr.style-eight:after {
     display: none;
   }
   .hero-cta {
-    padding-top: 4rem;
+    padding-top: 2.5rem;
   }
   .left-col .primary-cta {
     padding: 1rem 3.5rem;
   }
   .left-col h1 {
-    padding-top: 2rem;
+    padding-top: 4rem;
   }
 }
 
@@ -1226,7 +1236,7 @@ hr.style-eight:after {
     margin: 2em 2em 0 3em;
   }
   .hero .container .left-col h1 {
-    font-size: 3em;
+    font-size: 3.7em;
     width: 90%;
   }
   .hero-img {
@@ -1330,8 +1340,8 @@ body::-webkit-scrollbar-button {
 }
 
 .slider div {
-  height: 60px;
-  margin-bottom: 40px;
+  height: 70px;
+  margin-bottom: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }

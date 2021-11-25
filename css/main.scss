@@ -73,6 +73,7 @@ section {
 .gradient-text {
   background: -webkit-linear-gradient(var(--accent-color), var(--title-color));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -150,6 +151,7 @@ h3 {
   margin: 0 auto;
   background: -webkit-linear-gradient(#ffffff, #6284ff, #ff0000);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .error-btn {
@@ -285,16 +287,20 @@ body::-webkit-scrollbar-button {
   background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
   clip-path: polygon(0 16%, 100% 0, 100% 92%, 0 100%);
 }
-/*
-.noise-wrapper {
-  background-image: url("/images/assets/noise-texture.png");
-  background-position: top center;
-  background-size: auto;
-  opacity: 1;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-}
-*/
 
+.gradient-text-alt {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ff4136),
+    to(#5b53ff)
+  );
+  background-image: linear-gradient(90deg, #ff4136, #5b53ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /* Text Slider */
 .slider-wrapper {
   font-size: 40px;
@@ -379,6 +385,7 @@ body::-webkit-scrollbar-button {
   //box-shadow: inset 0 0 0 2px white, 0 0 0 4px white;
 }
 
+/* Canvas */
 .background--custom {
   background-color: transparent;
   width: 100vw;
@@ -388,8 +395,8 @@ body::-webkit-scrollbar-button {
   z-index: -2;
   top: 0;
   left: 0;
-  @media (min-width: 1600px) {
-    height: 50vh;
+  @media (min-width: 2000px) {
+    height: 65vh;
   }
 }
 canvas#canvas {

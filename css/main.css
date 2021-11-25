@@ -11,6 +11,7 @@
 #contact__title {
   background: -webkit-linear-gradient(white, whitesmoke);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -717,7 +718,7 @@ p.ui-dropdown-list-trigger {
   background-color: transparent;
   background-image: url(/assets/img/footer-lines.svg);
   background-repeat: no-repeat;
-  background-size: 25%;
+  background-size: 30%;
   background-position: 100% 0%;
 }
 
@@ -1061,6 +1062,10 @@ ol {
   }
 }
 
+.footer__logo {
+  font-size: 1.5rem;
+}
+
 @media (min-width: 64em) {
   .footer__logo {
     -ms-grid-row: 1;
@@ -1251,6 +1256,7 @@ section {
 .gradient-text {
   background: -webkit-linear-gradient(var(--accent-color), var(--title-color));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1328,6 +1334,7 @@ h3 {
   margin: 0 auto;
   background: -webkit-linear-gradient(#ffffff, #6284ff, #ff0000);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1470,15 +1477,14 @@ body::-webkit-scrollbar-button {
           clip-path: polygon(0 16%, 100% 0, 100% 92%, 0 100%);
 }
 
-/*
-.noise-wrapper {
-  background-image: url("/images/assets/noise-texture.png");
-  background-position: top center;
-  background-size: auto;
-  opacity: 1;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+.gradient-text-alt {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff4136), to(#5b53ff));
+  background-image: linear-gradient(90deg, #ff4136, #5b53ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-*/
+
 /* Text Slider */
 .slider-wrapper {
   font-size: 40px;
@@ -1592,6 +1598,7 @@ body::-webkit-scrollbar-button {
   border-radius: 50%;
 }
 
+/* Canvas */
 .background--custom {
   background-color: transparent;
   width: 100vw;
@@ -1603,9 +1610,9 @@ body::-webkit-scrollbar-button {
   left: 0;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 2000px) {
   .background--custom {
-    height: 50vh;
+    height: 65vh;
   }
 }
 

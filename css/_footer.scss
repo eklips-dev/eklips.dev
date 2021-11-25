@@ -46,6 +46,7 @@
   }
 
   &__logo {
+    font-size: 1.5rem;
     @include breakpoint-up(large) {
       grid-area: logo;
     }

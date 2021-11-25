@@ -84,6 +84,9 @@ ol {
     margin: 0.625rem 0 1.875rem;
     color: var(--link-color);
     line-height: 1;
+    &:hover {
+      opacity: var(--buttonDisabledOpacity);
+    }
   }
   .project-details {
     font-size: 0.9375rem;

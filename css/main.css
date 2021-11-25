@@ -478,7 +478,7 @@ p.ui-dropdown-list-trigger {
     font-weight: 700;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    border-top: 2px solid black;
+    border-top: 2px solid var(--link-color);
     border-top-width: 5px;
     color: var(--text-color);
     padding-top: 0.5rem;
@@ -518,7 +518,6 @@ p.ui-dropdown-list-trigger {
     border-radius: 5px;
     text-align: center;
     font-size: 0.8rem;
-    text-transform: uppercase;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     z-index: 999;
@@ -805,6 +804,10 @@ ol {
   line-height: 1;
 }
 
+.project-content .project-title:hover {
+  opacity: var(--buttonDisabledOpacity);
+}
+
 .project-content .project-details {
   font-size: 0.9375rem;
   line-height: 1.5;
@@ -1062,13 +1065,6 @@ section {
 
 .gradient-text {
   background: -webkit-linear-gradient(var(--accent-color), var(--title-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.gradient-text-typerwriter {
-  background: -webkit-gradient(linear, left top, right top, from(#4b6cb7), to(#182848));
-  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

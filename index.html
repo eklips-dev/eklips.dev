@@ -48,7 +48,6 @@
       content="Perandor is a web development and design studio in Tirana. We use strategic UX, SEO optimization and beautiful visual designs to help your business grow."
     />
     <meta name="twitter:image" content="https://i.imgur.com/61A9yUM.png" />
-    <link rel="canonical" href="https://perandor.design/" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -121,7 +120,7 @@
               <a href="#ourwork" class="nav-link">Our Work</a>
             </li>
             <li class="nav-item">
-              <a href="about" class="nav-link">About</a>
+              <a href="#about" class="nav-link">About</a>
             </li>
             <li class="lang-mobile">
               <a href="https://perandor.design/al/">
@@ -208,7 +207,51 @@
         <div class="scroller"></div>
       </div>
     --></section>
-
+    <section class="hero about-page" id="about">
+      <div class="container">
+        <video
+          class="hero-vid"
+          id="vid"
+          muted="muted"
+          loop="true"
+          data-animate-in="up"
+          data-animate-in-delay="300"
+        >
+          <source
+            src="assets/img/animation-1.mp4"
+            type="video/mp4"
+            loading="lazy"
+          />
+        </video>
+        <div class="left-col">
+          <p
+            class="about-subhead gradient-text"
+            data-animate-in="up"
+            data-animate-in-delay="300"
+          >
+            BUILD. GROW. PIVOT.
+          </p>
+          <h1 class="about-h2" data-animate-in="up" data-animate-in-delay="300">
+            Unlock your company's hidden
+            <span class="gradient-text">growth potential</span>
+            with us.
+          </h1>
+          <h3 data-animate-in="up" data-animate-in-delay="300">
+            We use strategic UX, SEO optimization and beautiful visual designs
+            to help your business grow.
+          </h3>
+          <h3 data-animate-in="up" data-animate-in-delay="300">
+            We see every project as a fresh opportunity, pushing ourselves to
+            create new digital experiences.​
+          </h3>
+          <h3 data-animate-in="up" data-animate-in-delay="300">
+            Have a question?
+            <a href="#contact" class="gradient-text">Click here</a>
+            to contact us!
+          </h3>
+        </div>
+      </div>
+    </section>
     <section class="features features-container features-wrapper" id="services">
       <div class="container">
         <div class="features__grid">
@@ -398,6 +441,7 @@
       ></path>
     </svg>
     <script src="js/app.js"></script>
+    <script src="js/videoplay.js"></script>
     <!--
 <script src="js/typerwriter.js"></script>
 -->

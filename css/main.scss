@@ -4,6 +4,7 @@
 @import "features";
 @import "ourwork";
 @import "fadein";
+@import "footer";
 
 :root {
   --primary-color: #5722cd;
@@ -28,7 +29,7 @@ body {
   background: var(--bg-color);
   margin: 0;
   font-family: "Poppins";
-  overflow-x: hidden;
+  //overflow-x: hidden;
 }
 #bg-white {
   background: white;

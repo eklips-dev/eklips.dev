@@ -196,7 +196,7 @@ form select {
 .curved {
   position: relative;
   background: #2c3e50;
-  height: 90vh;
+  max-height: 90vh;
   border-top-left-radius: 50% 10%;
   border-top-right-radius: 50% 10%;
 }

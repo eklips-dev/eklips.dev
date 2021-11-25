@@ -379,6 +379,32 @@ body::-webkit-scrollbar-button {
   //box-shadow: inset 0 0 0 2px white, 0 0 0 4px white;
 }
 
+.background--custom {
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  @media (min-width: 1600px) {
+    height: 50vh;
+  }
+}
+canvas#canvas {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  transform: rotate(-12deg) scale(2) translateY(-22%);
+  --gradient-color-1: #a960ee;
+  --gradient-color-2: #ff333d;
+  --gradient-color-3: #90e0ff;
+  --gradient-color-4: #ffcb57;
+  --gradient-speed: 0.000009;
+}
+
 /* Scroll down indicator animation 
 .scroll-container {
   width: 30px;

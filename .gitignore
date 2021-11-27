@@ -3,3 +3,5 @@
 .prettierignore
 about.html
 al/about.html
+pricing.html
+css/_pricing.scss

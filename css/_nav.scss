@@ -158,7 +158,7 @@ p.ui-dropdown-list-trigger {
   top: 25px;
   padding: 0;
   z-index: 1000;
-  margin-top: 0.5rem;
+  margin-top: 1.2rem;
 }
 
 .ui-dropdown-list li {
@@ -203,6 +203,19 @@ p.ui-dropdown-list-trigger {
   background-color: rgba(255, 255, 255, 0.9);
   border-style: none;
   transition: 0.3s;
+}
+
+.ui-dropdown-list:hover::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-color: transparent transparent rgba(255, 255, 255, 0.9);
+  border-width: 0 16px 12px;
+  border-style: solid;
+  position: absolute;
+  margin-top: 2.03rem;
+  margin-left: 1rem;
+  transform: translate(-50%);
 }
 
 #lang-switcher a,

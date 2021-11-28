@@ -124,10 +124,10 @@
                 </p>
                 <ul>
                   <li>
-                    <a href="https://perandor.design/al" title="English Version"
+                    <a href="https://perandor.design/al" title="Versioni Shqip"
                       >Shqip</a
                     >
-                    <a href="https://perandor.design/" title="Albanian Version"
+                    <a href="https://perandor.design/" title="Versioni Anglisht"
                       >Anglisht</a
                     >
                   </li>
@@ -398,10 +398,14 @@
               id="contactform"
               method="POST"
             >
-              <input type="text" placeholder="*Emri juaj" />
-              <input type="email" placeholder="*Email-i juaj" />
+              <input type="text" placeholder="*Emri juaj" required />
+              <input type="email" placeholder="*Email-i juaj" required />
               <input type="hidden" name="_subject" value="Website contact" />
-              <textarea name="message" placeholder="*Mesazhi juaj"></textarea>
+              <textarea
+                name="message"
+                placeholder="*Mesazhi juaj"
+                required
+              ></textarea>
               <input type="text" name="_gotcha" style="display: none" />
               <input type="submit" value="Dërgo" />
             </form>

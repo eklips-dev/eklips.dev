@@ -2,10 +2,85 @@
   text-align: center;
   font-family: "Poppins", sans-serif;
   padding-top: 1.5rem;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  height: 450px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  background-color: #161616;
+  background-image: url(//designvault.io/wp-content/themes/designvault/assets/img/dark-decoration.svg);
+  background-size: 1520px;
+  background-position: center;
+  border-radius: 14px;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: #888;
 }
 
 #contact__info {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contact-title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contact-title {
+  color: white;
+  font-size: 4.5rem;
+  line-height: 1;
+  margin-right: 40%;
+}
+
+@media (max-width: 39.9375em) {
+  .contact-title {
+    font-size: 3rem;
+    margin-right: 0%;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .contact-title {
+    font-size: 3.5rem;
+    margin-right: 0%;
+  }
 }
 
 #contact__title {
@@ -15,12 +90,13 @@
   -webkit-text-fill-color: transparent;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 4.5rem;
+  font-size: 2rem;
   margin: 0 auto;
+  color: white;
 }
 
 #contact__subtext {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   color: white;
   margin: 0 auto;
@@ -36,7 +112,7 @@
   background: var(--button-color);
   color: white;
   text-decoration: none;
-  padding: 1rem 3.5rem;
+  padding: 0.5rem 1.5rem;
   font-size: 1.5em;
   border-radius: 5em;
   font-weight: bold;
@@ -60,7 +136,6 @@
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    padding-bottom: 3rem;
   }
   #contact__info {
     display: inline-block;
@@ -172,7 +247,6 @@ form [type="submit"]:hover,
 form [type="reset"]:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
-  opacity: var(--buttonDisabledOpacity);
 }
 
 form [type="button"]:active,
@@ -193,18 +267,29 @@ form select {
 }
 
 .formbox {
+  width: 70%;
   border-width: 1px 1px 1px 1px;
   border-radius: 7px;
   background-color: transparent;
   background-image: url(/assets/img/strips.PNG);
   background-repeat: no-repeat;
-  background-size: 30%;
-  background-position: 100% 0%;
-  margin: 0 auto;
-  padding: 5% 5% 5% 5%;
-  opacity: 0.95;
+  background-size: 25%;
+  background-position: 0% 90%;
 }
 
+@media (max-width: 39.9375em) {
+  .formbox {
+    width: 100%;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .formbox {
+    width: 100%;
+  }
+}
+
+/*
 .curved {
   position: relative;
   background: #2c3e50;
@@ -212,7 +297,7 @@ form select {
   border-top-left-radius: 50% 10%;
   border-top-right-radius: 50% 10%;
 }
-
+*/
 li {
   list-style: none;
 }
@@ -390,11 +475,11 @@ p.ui-dropdown-list-trigger {
 .ui-dropdown-list ul {
   display: none;
   position: absolute;
-  right: -2rem;
+  right: -1.6rem;
   top: 25px;
   padding: 0;
   z-index: 1000;
-  margin-top: 1.2rem;
+  margin-top: 1.3rem;
 }
 
 .ui-dropdown-list li {
@@ -433,11 +518,11 @@ p.ui-dropdown-list-trigger {
 
 .ui-dropdown-list:hover > ul {
   display: block;
-  border-radius: 1rem;
+  border-radius: 0.8rem;
   padding: 0.5rem 2.5rem 0.5rem 0.5rem;
   text-align: center;
   border-width: 0 1px 1px 1px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   border-style: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -447,11 +532,11 @@ p.ui-dropdown-list-trigger {
   content: "";
   width: 0;
   height: 0;
-  border-color: transparent transparent rgba(255, 255, 255, 0.9);
-  border-width: 0 16px 12px;
+  border-color: transparent transparent rgba(255, 255, 255, 0.95);
+  border-width: 0 14px 13px;
   border-style: solid;
   position: absolute;
-  margin-top: 2.03rem;
+  margin-top: 2.05rem;
   margin-left: 1rem;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -475,7 +560,7 @@ p.ui-dropdown-list-trigger {
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 768px) {
   .languageSwitcher {
     display: none;
   }
@@ -622,6 +707,7 @@ p.ui-dropdown-list-trigger {
   background-color: #ffffff;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
+  border-radius: 0.3rem;
   border-color: #4054b2;
   -webkit-box-shadow: 0px 11px 16px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 11px 16px 0px rgba(0, 0, 0, 0.3);
@@ -660,12 +746,12 @@ p.ui-dropdown-list-trigger {
 }
 
 .features__icon img {
-  width: 20%;
+  width: 15%;
 }
 
 @media (max-width: 480px) {
   .features__icon img {
-    width: 30%;
+    width: 20%;
   }
 }
 
@@ -724,6 +810,20 @@ p.ui-dropdown-list-trigger {
   .features-wrapper {
     background-size: 50%;
   }
+}
+
+.services-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3.5rem;
+  font-size: 3rem;
 }
 
 a {
@@ -1061,7 +1161,7 @@ ol {
 }
 
 .footer__logo {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 @media (min-width: 64em) {
@@ -1323,13 +1423,14 @@ h3 {
   text-transform: uppercase;
   margin: 0 auto;
   padding: 0;
+  color: var(--title-color);
 }
 
 .error-page-head {
-  font-size: 6rem;
+  font-size: 3rem;
   font-weight: 700;
   padding: 0;
-  margin: 0 auto;
+  margin: 5rem 0rem 1rem 0rem;
   background: -webkit-linear-gradient(#ffffff, #6284ff, #ff0000);
   -webkit-background-clip: text;
   background-clip: text;

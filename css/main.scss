@@ -143,13 +143,13 @@ h3 {
   text-transform: uppercase;
   margin: 0 auto;
   padding: 0;
-  //color: var(--title-color);
+  color: var(--title-color);
 }
 .error-page-head {
-  font-size: 6rem;
+  font-size: 3rem;
   font-weight: 700;
   padding: 0;
-  margin: 0 auto;
+  margin: 5rem 0rem 1rem 0rem;
   background: -webkit-linear-gradient(#ffffff, #6284ff, #ff0000);
   -webkit-background-clip: text;
   background-clip: text;

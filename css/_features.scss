@@ -38,6 +38,7 @@
     background-color: #ffffff;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
+    border-radius: 0.3rem;
     border-color: #4054b2;
     box-shadow: 0px 11px 16px 0px rgba(0, 0, 0, 0.3);
     transition: background 0.3s, border 0.3s, border-radius 0.3s,
@@ -61,11 +62,11 @@
   &__icon {
     display: flex;
     img {
-      width: 20%;
+      width: 15%;
     }
     @media (max-width: 480px) {
       img {
-        width: 30%;
+        width: 20%;
       }
     }
     @include breakpoint-up(large) {
@@ -108,4 +109,12 @@
   @include breakpoint-down(small) {
     background-size: 50%;
   }
+}
+
+.services-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.5rem;
+  font-size: 4rem;
 }

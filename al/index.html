@@ -227,6 +227,13 @@
     </section>
     <section class="features features-container features-wrapper" id="services">
       <div class="container">
+        <h2
+          class="services-head gradient-text"
+          data-animate-in="up"
+          data-animate-in-delay="300"
+        >
+          Shërbimet tona
+        </h2>
         <div class="features__grid">
           <div
             class="features__item"
@@ -365,27 +372,19 @@
       </div>
       <br />
     </div>
-    <section id="contact" class="curved">
+    <section id="contact">
       <div class="container">
         <div id="contact__info">
-          <h2
-            id="contact__title"
-            data-animate-in="up"
-            data-animate-in-delay="300"
-          >
-            Na Kontaktoni.
-          </h2>
-          <br />
-          <div
-            id="contact__subtext"
-            data-animate-in="up"
-            data-animate-in-delay="300"
-          >
-            <p>
-              Keni një projekt në mëndje?
-              <br />
-              Na kontaktoni për të folur më tej.
-            </p>
+          <div class="contact-title-container">
+            <h2
+              class="contact-title"
+              id="contact-title"
+              data-animate-in="left"
+              data-animate-in-delay="300"
+            >
+              Le të flasim më tej.
+            </h2>
+            <br />
           </div>
           <div class="formbox" data-animate-in="up" data-animate-in-delay="300">
             <form
@@ -393,16 +392,16 @@
               id="contactform"
               method="POST"
             >
-              <input type="text" placeholder="*Emri juaj" required />
-              <input type="email" placeholder="*Email-i juaj" required />
+              <input type="text" placeholder="*Enter name" required />
+              <input type="email" placeholder="*Enter email" required />
               <input type="hidden" name="_subject" value="Website contact" />
               <textarea
                 name="message"
-                placeholder="*Mesazhi juaj"
+                placeholder="*Enter message"
                 required
               ></textarea>
               <input type="text" name="_gotcha" style="display: none" />
-              <input type="submit" value="Dërgo" />
+              <input type="submit" value="Send" />
             </form>
           </div>
         </div>

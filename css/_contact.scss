@@ -2,12 +2,67 @@
   text-align: center;
   font-family: "Poppins", sans-serif;
   padding-top: 1.5rem;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  height: 450px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  background-color: #161616;
+  background-image: url(//designvault.io/wp-content/themes/designvault/assets/img/dark-decoration.svg);
+  background-size: 1520px;
+  background-position: center;
+  border-radius: 14px;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: #888;
 }
 
 #contact__info {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
+.contact-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.contact-title {
+  color: white;
+  font-size: 4.5rem;
+  line-height: 1;
+  margin-right: 40%;
+  @include breakpoint-down(small) {
+    font-size: 3rem;
+    margin-right: 0%;
+  }
+  @include breakpoint-down(medium) {
+    font-size: 3.5rem;
+    margin-right: 0%;
+  }
+}
 #contact__title {
   background: -webkit-linear-gradient(white, whitesmoke);
   -webkit-background-clip: text;
@@ -15,13 +70,14 @@
   -webkit-text-fill-color: transparent;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 4.5rem;
+  font-size: 2rem;
   margin: 0 auto;
+  color: white;
   //line-height: 0.3vw;
 }
 
 #contact__subtext {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   color: white;
   margin: 0 auto;
@@ -36,7 +92,7 @@
   background: var(--button-color);
   color: white;
   text-decoration: none;
-  padding: 1rem 3.5rem;
+  padding: 0.5rem 1.5rem;
   font-size: 1.5em;
   border-radius: 5em;
   font-weight: bold;
@@ -56,7 +112,6 @@
     text-align: center;
     font-family: "Inter", sans-serif;
     height: fit-content;
-    padding-bottom: 3rem;
   }
 
   #contact__info {
@@ -159,7 +214,7 @@ form [type="reset"] {
 
   &:hover {
     transform: scale(1.03);
-    opacity: var(--buttonDisabledOpacity);
+    //opacity: var(--buttonDisabledOpacity);
   }
 
   &:active {
@@ -178,22 +233,23 @@ form select {
 }
 
 .formbox {
-  //border-style: solid;
+  width: 70%;
   border-width: 1px 1px 1px 1px;
-  //border-color: var(--button-color);
   border-radius: 7px;
-  //box-shadow: 0px 9px 14px 0px rgba(0, 0, 0, 0.3);
-  //transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   background-color: transparent;
   background-image: url(/assets/img/strips.PNG);
   background-repeat: no-repeat;
-  background-size: 30%;
-  background-position: 100% 0%;
-  margin: 0 auto;
-  padding: 5% 5% 5% 5%;
-  opacity: 0.95;
+  background-size: 25%;
+  background-position: 0% 90%;
+  @include breakpoint-down(small) {
+    width: 100%;
+  }
+  @include breakpoint-down(medium) {
+    width: 100%;
+  }
 }
 
+/*
 .curved {
   position: relative;
   background: #2c3e50;
@@ -201,3 +257,4 @@ form select {
   border-top-left-radius: 50% 10%;
   border-top-right-radius: 50% 10%;
 }
+*/

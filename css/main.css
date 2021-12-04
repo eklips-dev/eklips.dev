@@ -218,6 +218,18 @@ form textarea,
   font-weight: 700;
 }
 
+form input:hover,
+form select:hover,
+form textarea:hover,
+.StripeElement:hover {
+  -webkit-box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 2px;
+          box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 2px;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+}
+
 form input:focus,
 form select:focus,
 form textarea:focus,
@@ -228,6 +240,8 @@ form textarea:focus,
   outline-width: thin;
   outline-color: transparent;
   outline-offset: -1px;
+  -webkit-box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 3px;
+          box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 3px;
 }
 
 form [type="text"],
@@ -260,6 +274,12 @@ form [type="submit"]:hover,
 form [type="reset"]:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
+  -webkit-transition: -webkit-transform 0.15s ease-in-out;
+  transition: -webkit-transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 form [type="button"]:active,
@@ -267,6 +287,8 @@ form [type="submit"]:active,
 form [type="reset"]:active {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 form [type="button"]:focus,
@@ -302,15 +324,6 @@ form select {
   }
 }
 
-/*
-.curved {
-  position: relative;
-  background: #2c3e50;
-  max-height: 90vh;
-  border-top-left-radius: 50% 10%;
-  border-top-right-radius: 50% 10%;
-}
-*/
 li {
   list-style: none;
 }
@@ -1334,6 +1347,7 @@ ol {
 
 .buy-section {
   padding-top: 200px;
+  padding-bottom: 150px;
 }
 
 @media screen and (max-width: 1149px) {
@@ -1584,6 +1598,15 @@ ol {
   -ms-flex-pack: center;
   justify-content: center;
   fill: #000;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.btn a {
+  color: black;
 }
 
 @media screen and (max-width: 769px) {
@@ -1938,6 +1961,12 @@ h3 {
 
 #myBtn:hover {
   opacity: var(--buttonDisabledOpacity);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
 /* Customize website's scrollbar like Mac OS

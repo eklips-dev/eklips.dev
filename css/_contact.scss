@@ -187,6 +187,10 @@ form textarea,
   color: var(--title-color);
   font-weight: 700;
   //border-radius: 7px;
+  &:hover {
+    box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 2px;
+    transition: box-shadow 0.2s ease-in-out;
+  }
 }
 form input:focus,
 form select:focus,
@@ -198,6 +202,7 @@ form textarea:focus,
   outline-width: thin;
   outline-color: transparent;
   outline-offset: -1px;
+  box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 3px;
 }
 form [type="text"],
 form [type="email"],
@@ -221,11 +226,14 @@ form [type="reset"] {
 
   &:hover {
     transform: scale(1.03);
+    transition: transform 0.15s ease-in-out;
+    box-shadow: none;
     //opacity: var(--buttonDisabledOpacity);
   }
 
   &:active {
     transform: scale(0.95);
+    box-shadow: none;
   }
 }
 
@@ -255,13 +263,3 @@ form select {
     width: 100%;
   }
 }
-
-/*
-.curved {
-  position: relative;
-  background: #2c3e50;
-  max-height: 90vh;
-  border-top-left-radius: 50% 10%;
-  border-top-right-radius: 50% 10%;
-}
-*/

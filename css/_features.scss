@@ -82,7 +82,7 @@
     justify-content: left;
     align-items: center;
     height: 90px;
-    color: var(--title-color);
+    color: #0e3257;
 
     @include breakpoint-up(large) {
       font-size: 2rem;
@@ -117,5 +117,5 @@
   justify-content: center;
   margin-top: 3.5rem;
   font-size: 3rem;
-  color: var(--title-color);
+  color: #0e3257;
 }

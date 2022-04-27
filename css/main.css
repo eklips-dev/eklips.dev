@@ -343,7 +343,7 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: var(--title-color);
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 .logo:hover {
@@ -613,7 +613,7 @@ p.ui-dropdown-list-trigger {
 
 @media only screen and (max-width: 768px) {
   .navbar a {
-    font-size: 1.3em;
+    font-size: 1.6em;
     padding: 0.1em 1em;
   }
   .navbar.container {
@@ -648,7 +648,8 @@ p.ui-dropdown-list-trigger {
   .hamburger {
     display: block;
     cursor: pointer;
-    margin-left: 7.5rem;
+    margin-left: 8.7rem;
+    margin-top: 0.5rem;
   }
 }
 

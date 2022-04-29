@@ -891,9 +891,18 @@ ol {
 }
 
 .projects-image {
-  width: 100%;
+  width: 55%;
   max-width: 100%;
   vertical-align: middle;
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */
 }
 
 .project-container {
@@ -1728,7 +1737,7 @@ ol {
   --linkHoverOpacity: 0.6;
   --link-color: #0a2540;
   --linkHoverColor: #0a2540;
-  --bg-color: white;
+  --bg-color: #fefcff;
 }
 
 html {

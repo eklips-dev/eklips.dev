@@ -912,7 +912,6 @@ ol {
 
 .project {
   margin: 1.875rem;
-  margin-left: 10rem;
   display: -ms-grid;
   display: grid;
   grid-gap: 0.625rem;

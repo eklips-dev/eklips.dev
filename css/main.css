@@ -906,8 +906,9 @@ ol {
 }
 
 .project-container {
-  max-width: 62.5rem;
+  max-width: 85.5rem;
   margin: 3.125rem auto;
+  padding-right: 5rem;
 }
 
 .project {
@@ -934,9 +935,9 @@ ol {
 
 .project-content {
   position: relative;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-column: 1 / 7;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4 / 7;
   grid-row: 1 / -1;
 }
 
@@ -1016,7 +1017,7 @@ ol {
   position: relative;
   z-index: -1;
   border-radius: 2px;
-  grid-column: 6 / -1;
+  grid-column: 8 / -1;
   grid-row: 1 / -1;
 }
 
@@ -1154,7 +1155,6 @@ ol {
 .footer {
   background-color: white;
   font-size: 1rem;
-  padding-top: 3rem;
 }
 
 @media (min-width: 64em) {
@@ -1357,22 +1357,6 @@ ol {
   max-width: 1430px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-@media screen and (max-width: 769px) {
-  .buy-section {
-    padding-top: 100px;
-  }
-}
-
-@media screen and (max-width: 1149px) {
-  .buy-section {
-    padding-top: 150px;
-  }
-}
-
-.buy-section {
-  padding-top: 200px;
 }
 
 @media screen and (max-width: 1149px) {

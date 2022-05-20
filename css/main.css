@@ -339,11 +339,21 @@ a {
   z-index: 999;
 }
 
+.logo_img {
+  max-width: 35%;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo_img {
+    max-width: 60%;
+  }
+}
+
 .logo {
   text-decoration: none;
   font-weight: bold;
   color: var(--title-color);
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .logo:hover {

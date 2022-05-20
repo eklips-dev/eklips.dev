@@ -14,6 +14,7 @@ a {
 
 .logo_img {
   max-width: 35%;
+  margin-left: -2rem;
   @media only screen and (max-width: 768px) {
     max-width: 60%;
   }
@@ -303,19 +304,8 @@ p.ui-dropdown-list-trigger {
   .hamburger {
     display: block;
     cursor: pointer;
-    margin-left: 8.7rem;
+    margin-right: 2rem;
     margin-top: 0.5rem;
-  }
-  @media (max-width: 375px) {
-    .hamburger {
-      margin-left: 5.5rem;
-    }
-  }
-
-  @media (max-width: 320px) {
-    .hamburger {
-      margin-left: 1rem;
-    }
   }
 
   .hamburger.active .bar:nth-child(2) {

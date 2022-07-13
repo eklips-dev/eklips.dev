@@ -486,6 +486,11 @@ canvas#canvas {
     width: 98vmin;
     height: 105vmin;
   }
+  @include breakpoint-down(medium) {
+    transform: translate(-50%, -65%);
+    width: 98vmin;
+    height: 110vmin;
+  }
   transform: translate(-50%, -50%);
   width: 100vmin;
 }
@@ -499,6 +504,9 @@ canvas#canvas {
   font-size: 10vmin;
   @include breakpoint-down(small) {
     font-size: 12vmin;
+  }
+  @include breakpoint-down(medium) {
+    font-size: 10vmin;
   }
   padding: 2vmin 0;
   position: absolute;
@@ -531,6 +539,9 @@ canvas#canvas {
   transform: translate(0, -100%);
   @include breakpoint-down(small) {
     margin-left: 15%;
+  }
+  @include breakpoint-down(small) {
+    margin-left: 10%;
   }
 }
 

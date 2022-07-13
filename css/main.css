@@ -2281,6 +2281,15 @@ canvas#canvas {
   }
 }
 
+@media (max-width: 63.9375em) {
+  .animated-title {
+    -webkit-transform: translate(-50%, -65%);
+            transform: translate(-50%, -65%);
+    width: 98vmin;
+    height: 110vmin;
+  }
+}
+
 .animated-title > div {
   height: 50%;
   overflow: hidden;
@@ -2297,6 +2306,12 @@ canvas#canvas {
 @media (max-width: 39.9375em) {
   .animated-title > div div {
     font-size: 12vmin;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .animated-title > div div {
+    font-size: 10vmin;
   }
 }
 
@@ -2344,6 +2359,12 @@ canvas#canvas {
 @media (max-width: 39.9375em) {
   .animated-title > div.text-bottom div {
     margin-left: 15%;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .animated-title > div.text-bottom div {
+    margin-left: 10%;
   }
 }
 

@@ -81,7 +81,7 @@ ol {
   .subhead {
     text-transform: uppercase;
     font-weight: bold;
-    color: var(--accent-color);
+    color: black;
     letter-spacing: 0.3em;
   }
   .project-title {
@@ -100,8 +100,8 @@ ol {
     color: white;
 
     p {
-      background-color: var(--title-color);
-      opacity: var(--buttonDisabledOpacity);
+      background-color: black;
+      //opacity: var(--buttonDisabledOpacity);
       padding: 1.25rem 1.5625rem;
       @include tablet {
         background-color: transparent;
@@ -121,7 +121,7 @@ ol {
         border-width: 1px 1px 1px 1px;
         border-radius: 0.2rem;
         padding: 0.5rem;
-        background-color: var(--button-color);
+        background-color: black;
         cursor: pointer;
         &:hover {
           opacity: var(--buttonDisabledOpacity);

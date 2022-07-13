@@ -306,10 +306,10 @@ form select {
   border-width: 1px 1px 1px 1px;
   border-radius: 7px;
   background-color: transparent;
-  background-image: url(/assets/img/strips.webp);
+  background-image: url(/assets/img/art_1.png);
   background-repeat: no-repeat;
-  background-size: 25%;
-  background-position: 0% 90%;
+  background-size: 45%;
+  background-position: 0% 0%;
 }
 
 @media (max-width: 39.9375em) {
@@ -823,9 +823,9 @@ p.ui-dropdown-list-trigger {
 .features-wrapper {
   padding: 60px 0 60px;
   background-color: transparent;
-  background-image: url(/assets/img/footer-lines.svg);
+  background-image: url(/assets/img/art_1.png);
   background-repeat: no-repeat;
-  background-size: 30%;
+  background-size: 15%;
   background-position: 100% 0%;
 }
 
@@ -848,7 +848,7 @@ p.ui-dropdown-list-trigger {
   margin-top: 3.5rem;
   margin-bottom: 0;
   font-size: 3rem;
-  color: var(--header-title-color);
+  color: black;
 }
 
 .divider-wrap {
@@ -947,7 +947,7 @@ ol {
 .project-content .subhead {
   text-transform: uppercase;
   font-weight: bold;
-  color: var(--accent-color);
+  color: black;
   letter-spacing: 0.3em;
 }
 
@@ -970,8 +970,7 @@ ol {
 }
 
 .project-content .project-details p {
-  background-color: var(--title-color);
-  opacity: var(--buttonDisabledOpacity);
+  background-color: black;
   padding: 1.25rem 1.5625rem;
 }
 
@@ -997,7 +996,7 @@ ol {
   border-width: 1px 1px 1px 1px;
   border-radius: 0.2rem;
   padding: 0.5rem;
-  background-color: var(--button-color);
+  background-color: black;
   cursor: pointer;
 }
 
@@ -2009,10 +2008,23 @@ body::-webkit-scrollbar-button {
 }
 
 .wrapper {
-  background-color: #8ec5fc;
-  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  background-color: black;
   -webkit-clip-path: polygon(0 16%, 100% 0, 100% 92%, 0 100%);
           clip-path: polygon(0 16%, 100% 0, 100% 92%, 0 100%);
+}
+
+.black-section {
+  color: white;
+}
+
+.keyword-text {
+  color: #00e5ee;
+}
+
+.mainkeyword-text {
+  color: white;
+  background-color: black;
+  border-radius: 0.3rem;
 }
 
 .gradient-text-alt {

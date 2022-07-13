@@ -293,9 +293,23 @@ body::-webkit-scrollbar-button {
   display: none;
 }
 .wrapper {
-  background-color: #8ec5fc;
-  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  background-color: black;
+  //background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
   clip-path: polygon(0 16%, 100% 0, 100% 92%, 0 100%);
+}
+
+.black-section {
+  color: white;
+}
+
+.keyword-text {
+  color: #00e5ee;
+}
+
+.mainkeyword-text {
+  color: white;
+  background-color: black;
+  border-radius: 0.3rem;
 }
 
 .gradient-text-alt {

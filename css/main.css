@@ -1768,6 +1768,12 @@ section {
   margin-top: 35%;
 }
 
+@media (max-width: 39.9375em) {
+  .about-page {
+    margin-top: 25%;
+  }
+}
+
 .about-subhead {
   text-transform: uppercase;
   font-weight: bold;

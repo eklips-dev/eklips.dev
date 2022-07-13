@@ -66,6 +66,9 @@ section {
   padding: 0;
   margin: 0 auto;
   margin-top: 35%;
+  @include breakpoint-down(small) {
+    margin-top: 25%;
+  }
 }
 .about-subhead {
   text-transform: uppercase;

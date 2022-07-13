@@ -36,8 +36,9 @@ body {
   background: white;
 }
 .hero .container {
-  padding-top: 5rem;
-  margin-top: 2rem;;
+  padding-top: 0;
+  margin-top: 1.5rem;
+  //margin-bottom: 50%;
 }
 
 a {
@@ -64,6 +65,7 @@ section {
 .about-page {
   padding: 0;
   margin: 0 auto;
+  margin-top: 35%;
 }
 .about-subhead {
   text-transform: uppercase;
@@ -179,6 +181,7 @@ h3 {
 @include breakpoint-down(small) {
   .hero .container {
     padding-top: 5.5rem;
+    margin-bottom: 40vw;
   }
   .hero-img {
     display: none;
@@ -460,3 +463,78 @@ canvas#canvas {
   }
 }
 */
+
+
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+  color: #222;
+  font-family: Poppins, Arial, sans-serif;
+  height: 70vmin;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  @include breakpoint-down(small) {
+    transform: translate(-50%, -70%);
+    width: 98vmin;
+    height: 105vmin;
+  }
+  transform: translate(-50%, -50%);
+  width: 100vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 10vmin;
+  @include breakpoint-down(small) {
+    font-size: 12vmin;
+  }
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #000;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 0.95s;
+  animation-delay: 0.45s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #767676;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.45s;
+  animation-delay: 1.55s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+  @include breakpoint-down(small) {
+    margin-left: 15%;
+  }
+}
+
+.title-container {
+  padding: 0;
+  margin: 0 auto;
+}

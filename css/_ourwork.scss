@@ -75,7 +75,7 @@ ol {
 
   @include tablet {
     grid-column: 1 / -1;
-    padding: 1.875rem;
+    padding: 3.375rem;
   }
 
   .subhead {
@@ -121,14 +121,15 @@ ol {
         border-width: 1px 1px 1px 1px;
         border-radius: 0.2rem;
         padding: 0.5rem;
-        background-color: black;
+        background-color: #00F6FF;
         cursor: pointer;
         &:hover {
           opacity: var(--buttonDisabledOpacity);
         }
       }
       a {
-        color: white;
+        color: black;
+        font-weight: 700;
       }
     }
   }

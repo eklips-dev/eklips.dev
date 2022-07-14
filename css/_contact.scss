@@ -219,8 +219,9 @@ form [type="reset"] {
   -moz-appearance: button;
   appearance: button;
   padding: 12px 24px;
-  background-color: white;
+  background-color: #00F6FF;
   color: black;
+  font-weight: 700;
   border-radius: 7px;
   transition: transform 250ms cubic-bezier(0.2, 0.8, 0.4, 1);
 

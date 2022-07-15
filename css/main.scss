@@ -544,6 +544,7 @@ canvas#canvas {
 }
 .animated-title > div.text-top div span:first-child {
   color: #767676;
+  margin-right: 13%;
 }
 .animated-title > div.text-bottom {
   bottom: 0;
@@ -555,10 +556,10 @@ canvas#canvas {
   top: 0;
   transform: translate(0, -100%);
   @include breakpoint-down(small) {
-    margin-left: 15%;
+    //margin-left: 15%;
   }
   @include breakpoint-down(small) {
-    margin-left: 10%;
+    //margin-left: 10%;
   }
 }
 

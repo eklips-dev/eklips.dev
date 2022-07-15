@@ -2018,6 +2018,10 @@ body::-webkit-scrollbar-button {
   color: white;
 }
 
+.subtext {
+  margin: 0 auto;
+}
+
 .keyword-text {
   color: #00e5ee;
 }

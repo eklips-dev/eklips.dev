@@ -1256,6 +1256,7 @@ ol {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-right: 5%;
 }
 
 .footer__address svg {
@@ -1273,6 +1274,7 @@ ol {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-right: 5%;
 }
 
 @media (min-width: 64em) {

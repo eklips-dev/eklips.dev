@@ -1,1 +1,0 @@
-var interval=setInterval(function(){4==document.getElementById("vid").readyState&&(document.getElementById("vid").play(),clearInterval(interval))},2e3);

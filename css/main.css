@@ -1681,6 +1681,11 @@ h3 {
   margin-right: 10px;
 }
 
+.hero-img {
+  width: 30%;
+  margin-top: 3em;
+}
+
 .error-page {
   font-size: 4rem;
   font-weight: 700;
@@ -1728,6 +1733,9 @@ h3 {
     padding-top: 5.5rem;
     margin-bottom: 40vw;
   }
+  .hero-img {
+    display: none;
+  }
   .hero-vid {
     display: none;
   }
@@ -1760,6 +1768,10 @@ h3 {
   .hero .container .left-col h1 {
     font-size: 3.7em;
     width: 90%;
+  }
+  .hero-img {
+    width: 35%;
+    margin-right: 0.1em;
   }
   .hero-vid {
     width: 50%;

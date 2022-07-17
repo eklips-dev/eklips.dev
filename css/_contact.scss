@@ -95,25 +95,6 @@
   }
 }
 
-.contact-cta {
-  background: var(--button-color);
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem 1.5rem;
-  font-size: 1.5em;
-  border-radius: 5em;
-  font-weight: bold;
-  display: inline-block;
-  &:hover {
-    opacity: var(--buttonDisabledOpacity);
-    transition: background 0.2s ease-in-out;
-  }
-}
-
-.contact-section-cta {
-  padding-top: 0.5rem;
-}
-
 @include breakpoint-down(medium) {
   #contact {
     text-align: center;

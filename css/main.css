@@ -320,7 +320,7 @@ a {
 }
 
 .logo_img {
-  max-width: 50%;
+  max-width: 35%;
   margin-left: -2rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -328,7 +328,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .logo_img {
-    max-width: 50%;
+    max-width: 35%;
   }
 }
 

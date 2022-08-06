@@ -125,6 +125,7 @@
 
   &__links1 {
     grid-area: links1;
+    font-weight: 700;
 
     @include breakpoint-up(large) {
       justify-self: right;
@@ -133,6 +134,7 @@
 
   &__links2 {
     grid-area: links2;
+    font-weight: 700;
   }
 
   &__social {

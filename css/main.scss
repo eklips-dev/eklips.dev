@@ -156,7 +156,7 @@ h3 {
 @include breakpoint-down(small) {
   .hero .container {
     padding-top: 5.5rem;
-    margin-bottom: 40vw;
+    margin-bottom: 30vw;
   }
   .hero-img {
     display: none;
@@ -167,6 +167,11 @@ h3 {
   }
   .left-col h1 {
     padding-top: 4rem;
+  }
+  @include breakpoint-down(medium) {
+    .hero-vid {
+      display: none;
+    }
   }
 @include breakpoint-up(large) {
   .container {
@@ -346,7 +351,7 @@ canvas#canvas {
     height: 105vmin;
   }
   @include breakpoint-down(medium) {
-    transform: translate(-50%, -65%);
+    transform: translate(-50%, -80%);
     width: 98vmin;
     height: 110vmin;
   }

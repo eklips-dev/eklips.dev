@@ -1733,7 +1733,7 @@ h3 {
 @media (max-width: 39.9375em) {
   .hero .container {
     padding-top: 5.5rem;
-    margin-bottom: 40vw;
+    margin-bottom: 30vw;
   }
   .hero-img {
     display: none;
@@ -1745,6 +1745,12 @@ h3 {
 
 .left-col h1 {
   padding-top: 4rem;
+}
+
+@media (max-width: 63.9375em) {
+  .hero-vid {
+    display: none;
+  }
 }
 
 @media (min-width: 64em) {
@@ -1978,8 +1984,8 @@ canvas#canvas {
 
 @media (max-width: 63.9375em) {
   .animated-title {
-    -webkit-transform: translate(-50%, -65%);
-            transform: translate(-50%, -65%);
+    -webkit-transform: translate(-50%, -80%);
+            transform: translate(-50%, -80%);
     width: 98vmin;
     height: 110vmin;
   }

@@ -1,508 +1,483 @@
 <!DOCTYPE html>
-<html lang="sq">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Eklips është një studio web dizanj dhe zhvillimi në Tiranë. Ne përdorim UX strategjik, optimizimin e SEO dhe dizajne të bukura vizuale për të ndihmuar biznesin tuaj të rritet."
-    />
-    <meta
-      name="keywords"
-      content="eklips, web design tirana, web designer albania, web design shqip, ecommerce tirana albania, web developer albania, web developer near me albania,
-    web design agency albania, custom web development albania, website designing company albania"
-    />
-    <!-- Google / Search Engine Tags -->
-    <meta
-      itemprop="name"
-      content="Agjensi Dixhitale Eklips &#8212; Modernizoni Biznesin Tuaj"
-    />
-    <meta
-      itemprop="description"
-      content="Eklips është një studio web dizanj dhe zhvillimi në Tiranë. Ne përdorim UX strategjik, optimizimin e SEO dhe dizajne të bukura vizuale për të ndihmuar biznesin tuaj të rritet."
-    />
-    <meta itemprop="image" content="https://i.imgur.com/rO19IQC.png" />
+<html lang="en" class="studio-agency dark:uk-background-gray-100 dark:uk-text-gray-40">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agjensi Dixhitale Eklips &#8212; Modernizoni Biznesin Tuaj</title>
+        <link rel="icon" type="image/png" href="assets/images/favicon/favicon.ico"/>
+        <meta name="description" content="page description here">
 
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://eklips.dev" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Agjensi Dixhitale Eklips &#8212; Modernizoni Biznesin Tuaj"
-    />
-    <meta
-      property="og:description"
-      content="Eklips është një studio web dizanj dhe zhvillimi në Tiranë. Ne përdorim UX strategjik, optimizimin e SEO dhe dizajne të bukura vizuale për të ndihmuar biznesin tuaj të rritet."
-    />
-    <meta property="og:image" content="https://i.imgur.com/rO19IQC.png" />
+        <link rel="preload" href="assets/fonts/space-grotesk/SpaceGrotesk-Regular.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="assets/fonts/space-grotesk/SpaceGrotesk-Bold.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="assets/fonts/space-grotesk/SpaceGrotesk-Medium.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="assets/fonts/brand-icons/brand-icons.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css" as="style">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css" as="style">
+        <link rel="preload" href="assets/css/theme/main.css" as="style">
 
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Agjensi Dixhitale Eklips &#8212; Modernizoni Biznesin Tuaj"
-    />
-    <meta
-      name="twitter:description"
-      content="Eklips është një studio web dizanj dhe zhvillimi në Tiranë. Ne përdorim UX strategjik, optimizimin e SEO dhe dizajne të bukura vizuale për të ndihmuar biznesin tuaj të rritet."
-    />
-    <meta name="twitter:image" content="https://i.imgur.com/rO19IQC.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/favicon/favicon-16x16.png"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <title>Agjensi Dixhitale Eklips &#8212; Modernizoni Biznesin Tuaj</title>
-    <link rel="stylesheet" href="/css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <nav class="navbar sticky">
-        <div class="nav-container">
-          <a class="logo" alt="eklips logo" href="https://eklips.dev/"><img class="logo_img" id="logo" alt="eklips logo" src="assets/img/eklips_branding_dark.png"></a>
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a href="#services" class="nav-link">SHËRBIMET</a>
-            </li>
-            <li class="nav-item">
-              <a href="#pricing" class="nav-link">PAKETAT</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">RRETH</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">KONTAKT</a>
-            </li>
-            <li class="lang-mobile">
-              <a href="https://eklips.dev/en">
-                <img
-                  src="/assets/img/gb.svg"
-                  alt="Great Britain Flag"
-                  loading="lazy"
-                />
-                EN
-              </a>
-            </li>
-            <li class="languageSwitcher">
-              <div id="lang-switcher" class="ui-dropdown-list">
-                <p class="ui-dropdown-list-trigger de">
-                  <strong
-                    ><img
-                      class="lang-img"
-                      src="/assets/img/intl.svg"
-                      alt="Earth SVG"
-                      title="Ndrysho gjuhën e faqes"
-                  /></strong>
-                </p>
-                <ul>
-                  <li>
-                    <a href="https://eklips.dev/" title="Versioni Shqip"
-                      >Shqip</a
-                    >
-                    <a href="https://eklips.dev/en" title="Versioni Anglisht"
-                      >English</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </div>
-      </nav>
-    </header>
+        <script src="assets/js/app-head.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css">
+        <link rel="stylesheet" href="assets/css/theme/main.css">
     <!--
-    <div class="background--custom">
-      <canvas id="canvas" />
-    </div>
-    <script src="https://cdn.jsdelivr.net/gh/greentfrapp/pocoloco@minigl/minigl.js"></script>
-    <script>
-      var gradient = new Gradient();
-      gradient.initGradient("#canvas");
-    </script>
-    -->
-    <section class="hero">
-      <div class="container">
-        <div class="animated-title">
-          <div class="text-top">
-            <div>
-              <span>Zgjidhje Dixhitale</span>
-              <span>Moderne & Kreative</span>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=#"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '#');
+        </script>
+        -->
+    </head>
+    <body>
+
+        <!-- Dark/Light toggle -->
+        <div class="darkmode-trigger bottom-right" data-darkmode-toggle="">
+            <label class="switch">
+                <span class="sr-only">Tema e Errët</span>
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <!-- Video modal -->
+        <div id="uni-modal-media-video" data-uk-modal="">
+            <div class="uk-modal-dialog uk-modal-video uk-width-2-3@m uk-margin-auto-vertical">
+                <button class="uk-modal-close-outside uk-close" type="button">
+                    <i class="material-icons uk-icon-medium">Mbyll</i>
+                </button>
+                <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" controls playsinline data-uk-video></video>
             </div>
-          </div>
-          <div class="text-bottom">
-            <div>Për Biznesin Tuaj</div>
-          </div>
         </div>
-      </div>
-    </section>
-    <section class="hero about-page">
-      <div class="container">
-        <video
-          class="hero-vid"
-          id="vid"
-          muted="muted"
-          loop="true"
-          style="z-index:-10"
-          data-animate-in="up"
-          data-animate-in-delay="200"
-        >
-          <source
-            src="/assets/img/app-development-vid.mp4"
-            type="video/mp4"
-            loading="lazy"
-          />
-        </video>
-        <div class="left-col">
-          <p
-            class="about-subhead"
-            data-animate-in="up"
-            data-animate-in-delay="200"
-          >
-            KRIJO. ZHVILLO. RRIT.
-          </p>
-          <h2 class="about-h2" data-animate-in="up" data-animate-in-delay="200">
-            Zbuloni
-            <span class="mainkeyword-text">potencialin</span><br>
-            e kompanisë suaj duke punuar me ne.
-          </h2>
-          <h3 data-animate-in="up" data-animate-in-delay="200">
-            Përdorim UX strategjik, optimizimin e SEO dhe dizajne të bukura
-            vizuale për të ndihmuar biznesin tuaj të rritet.
-          </h3>
-          <h3 data-animate-in="up" data-animate-in-delay="200">
-            Ne e shohim çdo projekt si një mundësi të re, duke e shtyrë veten
-            për të krijuar përvoja të reja dixhitale.​
-          </h3>
-          <h3 data-animate-in="up" data-animate-in-delay="200">
-            Keni pyetje?
-            <a href="#contact" class="keyword-text">Klikoni këtu</a>
-            për të na kontaktuar!
-          </h3>
-        </div>
-      </div>
-    </section>
-    <div class="container">
-    <div class="content-wrapper" id="services">
-      <div class="row">
-          <div class="col-lg-4 col-md-6">
-              <h4 class="content-heading heading heading-small light-2" data-animate-in="up" data-animate-in-delay="200">
-                  SHËRBIMET
-              </h4>
-              <div class="text-list text-list-large dark-1" data-animate-in="up" data-animate-in-delay="200">
-                  <ul>
-                      <li>
-                        <span>Web Development</span>
-                      </li>
-                      <li>
-                        <span>App Development</span>
-                      </li>
-                      <li>
-                        <span>Branding</span>
-                      </li>
-                      <li>
-                        <span>UI/UX Design</span>
-                      </li>
-                      <li>
-                        <span>Graphic Design</span>
-                      </li>
-                      <li>
-                        <span>CMS</span>
-                      </li>
-                      <li>
-                        <span>IT Solutions</span>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-          <div class="col-lg-6 col-md-6 content-second-column" id="about">
-              <h4 class="content-heading heading heading-small light-2" data-animate-in="up" data-animate-in-delay="200">
-                  RRETH EKLIPS
-              </h4>
-              <div class="paragraph dark-1">
-                  <p data-animate-in="up" data-animate-in-delay="200">EKLIPS është një agjensi dixhitale moderne në Shqipëri me përvojë shumëvjeçare në fushën e Zhvillimit të Web dhe Mobile Applications.</p>
-                  <p style="height: auto;">&nbsp;</p>
-                  <p data-animate-in="up" data-animate-in-delay="200">Ne kemi ndihmuar kompani të shumta të ndërmarrin hapin tjetër në modernizimin dhe rritjen e mëtejshme të biznesit të tyre.</p>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
-</section>
-<section class="hero wrapper">
-  <div class="container">
-    <div class="left-col">
-      <p class="subhead" data-animate-in="up" data-animate-in-delay="200">
-        Web Dizanj &amp; Zhvillim I Bërë Ndryshe
-      </p>
-      <h2 class="black-section" data-animate-in="up" data-animate-in-delay="200">
-        Ne krijojmë <span class="keyword-text">vlerë</span> për
-        klientët tanë.
-      </h2>
-      <h3 class="black-section subtext" data-animate-in="up" data-animate-in-delay="200">
-        Kombinojmë njohuritë dhe ekspertizën tonë për të krijuar dizajne dhe strategji të jashtëzakonshme të përshtatura për nevojat dhe kërkesat e biznesit tuaj në çdo kategori.
-      </h3>
-    </div>
-    <img
-      src="/assets/img/art_2.png"
-      class="hero-img fadein"
-      alt="Illustration"
-      loading="lazy"
-      data-animate-in="up"
-      data-animate-in-delay="200"
-    />
-  </div>
-</section>
-     <section class="buy-section" id="pricing">
-      <div class="buy-container">
-        <div class="buy-section__grid">
-          <div
-            class="buy-section__title"
-            data-animate-in="up"
-            data-animate-in-delay="200"
-          >
-            <h2 class="h1">Nisni dhe <span class="mainkeyword-text">Rrisni</span> prezencën tuaj online me ne.</h2>
-          </div>
-          <div class="buy-section__cards">
-            <div
-              class="buy-card"
-              data-animate-in="up"
-              data-animate-in-delay="200"
-            >
-              <div class="buy-card__head">
-                <div class="buy-card__title">
-                  <div>Nis</div>
-                  <div>$500</div>
+
+        <!-- Menu modal -->
+        <div id="uni-menu-modal" class="uk-modal-full" data-uk-modal="">
+            <div class="uk-modal-dialog">
+                <div class="uk-container">
+                    <div class="uk-flex-middle uk-flex-center" data-uk-height-viewport="">
+                        <ul class="uk-list uk-list-large uk-h2 uk-h1@m uk-text-center">
+                            <li><a href="index.html">kreu.</a></li>
+                            <li><a href="works.html">projekte.</a></li>
+                            <li><a href="about.html">rreth nesh.</a></li>
+                            <li><a href="mailto:hello@eklips.dev">kontakt.</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <p class="buy-card__head-text">Nisni prezencën tuaj online</p>
-              </div>
-              <div class="buy-card__main">
-                <p>Përfshin:</p>
-                <ul>
-                  <li>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 16.518l-4.5-4.319 1.396-1.435 3.078 2.937 6.105-6.218 1.421 1.409-7.5 7.626z"/>
-                      </svg>
-                      3 nën-faqe
-                  </li>
-                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 16.518l-4.5-4.319 1.396-1.435 3.078 2.937 6.105-6.218 1.421 1.409-7.5 7.626z"/>
-                  </svg>
-                  Dizanj Unik
-                  </li>
-                  <li>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 16.518l-4.5-4.319 1.396-1.435 3.078 2.937 6.105-6.218 1.421 1.409-7.5 7.626z"/>
-                      </svg>
-                      Google Analytics
-                  </li>
-                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 16.518l-4.5-4.319 1.396-1.435 3.078 2.937 6.105-6.218 1.421 1.409-7.5 7.626z"/>
-                  </svg>
-                  Suport
-                  </li>
-                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 16.518l-4.5-4.319 1.396-1.435 3.078 2.937 6.105-6.218 1.421 1.409-7.5 7.626z"/>
-                  </svg>
-                  SEO
-                  </li>
-                </ul>
-                <div class="buy-card__btn">
-                  <button class="btn btn--white_accent">
-                    <a href="#contact">Zgjidhni</a>
-                  </button>
-                </div>
-              </div>
             </div>
-            <div
-              class="buy-card buy-card--white"
-              data-animate-in="up"
-              data-animate-in-delay="400"
-            >
-              <div class="buy-card__head">
-                <div class="buy-card__title">
-                  <div>RRIT</div>
-                  <div class="mainkeyword-text">$Kontakt</div>
+        </div>
+
+        <!-- Wrap: Studio Demo -->
+        <div class="wrap">
+
+            <!-- Hero -->
+            <div class="uni-studio-hero uk-panel uk-overflow-hidden">
+
+                <!-- Hero: Header -->
+                <header class="uni-studio-header uni-header uk-position-top">
+                    <div class="uni-header-navbar uk-sticky-transparent" data-uk-sticky="top: 120; animation: uk-animation-slide-top;">
+                        <div class="uk-container uk-container-expand">
+                            <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar="">
+                                <div class="uk-navbar-top uk-flex-center">
+                                    <div class="uk-navbar-left">
+                                        <div class="uk-navbar-item">
+                                            <a class="uk-logo uk-navbar-item uk-h4 uk-h3@s uk-margin-remove dark:uk-text-gray-10" href="index.html">eklips.dev</a>
+                                            <a class="uk-logo uk-navbar-item uk-sticky-logo dark:uk-text-gray-10" href="index.html">e.</a>
+                                        </div>
+                                    </div>
+                                    <div class="uk-navbar-right uk-flex-right">
+                                        <div class="uk-navbar-item">
+                                            <a class="uni-menu-trigger" href="#uni-menu-modal" data-uk-toggle=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Hero: Content -->
+                <div class="uni-studio-hero uk-panel uk-section-medium uk-section-xlarge@m uk-padding-remove-bottom">
+                    <div class="uk-container">
+                        <div class="uk-container uk-container-small">
+                            <h2 class="hero-entry uk-h3 uk-h2@s uk-h1@m uk-margin-remove dark:uk-text-gray-10">Zgjidhje Dixhitale, Moderne & Kreative Për Biznesin Tuaj</h2>
+                        </div>
+                        <div class="uk-panel uk-overflow-hidden uk-margin-2xlarge-top uk-margin-3xlarge-top@m">
+                            <canvas class="uk-visible@m" width="1200" height="640"></canvas>
+                            <canvas class="uk-hidden@m" width="576" height="610"></canvas>
+                            <img src="assets/images/heros/studio-hero.jpg" alt="image" data-uk-cover="">
+                            <!--
+                            <div class="uk-position-center">
+                                <a  class="material-icons-round uk-icon-medium uk-icon-large@m uk-padding-small uk-padding@m uk-radius-circle uk-text-white uk-background-secondary"
+                                    href="https://yootheme.com/site/images/media/yootheme-pro.mp4"
+                                    data-uk-toggle="target: #uni-modal-media-video"
+                                    style="text-decoration: none;">play_arrow</a>
+                            </div>
+                            -->
+                        </div>
+                    </div>
                 </div>
-                <p class="buy-card__head-text">Rrisni prezencën tuaj online</p>
-              </div>
-              <div class="buy-card__main">
-                <p>Përfshin:</p>
-                <ul>
-                  <li>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 16.518l-4.5-4.319 1.396-1.435 3.078 2.937 6.105-6.218 1.421 1.409-7.5 7.626z"/>
-                      </svg>
-                      Nën-faqe të shumta
-                  </li>
-                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 16.518l-4.5-4.319 1.396-1.435 3.078 2.937 6.105-6.218 1.421 1.409-7.5 7.626z"/>
-                  </svg>
-                  Dizanj Unik
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                      <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 16.518l-4.5-4.319 1.396-1.435 3.078 2.937 6.105-6.218 1.421 1.409-7.5 7.626z"/>
-                    </svg>
-                    Domain + Hosting
-                </li>
-                  <li>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 16.518l-4.5-4.319 1.396-1.435 3.078 2.937 6.105-6.218 1.421 1.409-7.5 7.626z"/>
-                      </svg>
-                      Përditësime dizanji
-                  </li>
-                  <li>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 16.518l-4.5-4.319 1.396-1.435 3.078 2.937 6.105-6.218 1.421 1.409-7.5 7.626z"/>
-                      </svg>
-                      Google Analytics
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                      <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 16.518l-4.5-4.319 1.396-1.435 3.078 2.937 6.105-6.218 1.421 1.409-7.5 7.626z"/>
-                    </svg>
-                    Suport 24/7
-                </li>
-                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 16.518l-4.5-4.319 1.396-1.435 3.078 2.937 6.105-6.218 1.421 1.409-7.5 7.626z"/>
-                  </svg>
-                  SEO
-                  </li>
-                </ul>
-                <div class="buy-card__btn">
-                  <button class="btn btn--black">
-                    <a href="#contact">Zgjidhni</a>
-                  </button>
-                </div>
-              </div>
+
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <div class="container">
-        <div id="contact__info">
-          <div class="contact-title-container">
-            <h2
-              class="contact-title"
-              id="contact-title"
-              data-animate-in="left"
-              data-animate-in-delay="200"
-            >
-              Le të flasim më tej.
-            </h2>
-            <br />
-          </div>
-          <div class="formbox" data-animate-in="up" data-animate-in-delay="200">
-            <form
-              action="https://formspree.io/f/mnqwovzw"
-              id="contactform"
-              method="POST"
-            >
-              <input type="text" placeholder="*Vendosni emrin" required />
-              <input type="email" placeholder="*Vendosni email" required />
-              <input type="hidden" name="_subject" value="Kontakt për faqe interneti" />
-              <textarea
-                name="message"
-                placeholder="*Shkruani mesazhin"
-                required
-              ></textarea>
-              <input type="text" name="_gotcha" style="display: none" />
-              <input type="submit" value="Dërgo" />
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer" data-animate-in="up" data-animate-in-delay="200">
-      <div class="container">
-        <div class="footer__address">
-          <div class="address">
-                Copyright &copy; <script>document.write(new Date().getFullYear())</script> | <b>eklips.dev</b>
-                <br>
-                
-                <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M6.188 0C2.74 0 0 2.79 0 6.3 0 10.98 6.188 18 6.188 18s6.187-7.02 6.187-11.7c0-3.51-2.74-6.3-6.188-6.3zm0 8.55c-1.238 0-2.21-.99-2.21-2.25s.972-2.25 2.21-2.25c1.237 0 2.21.99 2.21 2.25s-.973 2.25-2.21 2.25z"
-                    fill="white"
-                    fill-rule="evenodd"
-                  ></path>
-                </svg>
-                Tiranë, Shqipëri
-              </div>
-        </div>
-        <div class="footer__contact">
-          <div class="footer__contact-phone">
-            <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M17 12.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H1C.4 0 0 .4 0 1c0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM16 9h2c0-5-4-9-9-9v2c3.9 0 7 3.1 7 7zm-4 0h2c0-2.8-2.2-5-5-5v2c1.7 0 3 1.3 3 3z"
-                fill="white"
-                fill-rule="evenodd"
-              ></path>
-            </svg>
-            <!--
-            <div class="phone">
-              <a href="tel:+355688551232">+355 68 85 51 232</a>
+
+            <!-- Services -->
+            <div class="uni-studio-services uk-section-medium uk-section-2xlarge@m">
+                <div class="uk-container uk-container-small">
+                    <div class="uk-grid uk-grid-medium@m uk-flex-between" data-uk-grid="">
+                        <div class="uk-width-5-10@m">
+                            <h2 class="uk-h3 uk-h2@s uk-h1@m uk-margin-remove dark:uk-text-gray-10">
+                                Zbuloni <b>potencialin</b>
+                                e kompanisë suaj duke punuar me ne.</h2>
+                                <br>
+                                <br>
+                                Përdorim UX strategjik, optimizimin e SEO dhe dizajne të bukura vizuale për të ndihmuar biznesin tuaj të rritet.
+                                Ne e shohim çdo projekt si një mundësi të re, duke e shtyrë veten për të krijuar përvoja të reja dixhitale.
+                            </p>
+                        </div>
+                        <div class="uk-width-4-10@m">
+                            <ul class="uk-list uk-text-xlarge@m dark:uk-text-gray-10">
+                                <li>
+                                    <a href="#" class="uk-link-expand">
+                                        <i class="material-icons-round uk-icon-medium@m">arrow_forward</i>
+                                        <span>Strategji digjitale.</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="uk-link-expand">
+                                        <i class="material-icons-round uk-icon-medium@m">arrow_forward</i>
+                                        <span>Eksperiencë brand-i.</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="uk-link-expand">
+                                        <i class="material-icons-round uk-icon-medium@m">arrow_forward</i>
+                                        <span>UX/UI design.</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="uk-link-expand">
+                                        <i class="material-icons-round uk-icon-medium@m">arrow_forward</i>
+                                        <span>Web development.</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="uk-link-expand">
+                                        <i class="material-icons-round uk-icon-medium@m">arrow_forward</i>
+                                        <span>Mobile development.</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Clients
+            <div class="uni-studio-clients uk-section-medium uk-section-2xlarge@m uk-background-gray-10 dark:uk-background-gray-100 dark:uk-text-gray-40">
+                <div class="uk-container uk-container-small">
+                    <div class="uk-grid uk-grid-large@m uk-flex-between uk-child-width-1-3 uk-child-width-auto uk-text-center" data-uk-grid="">
+                        <div>
+                            <img width="120" src="assets/images/brands/brand-01.svg" alt="Brand" data-uk-svg="" />
+                        </div>
+                        <div>
+                            <img width="120" src="assets/images/brands/brand-02.svg" alt="Brand" data-uk-svg="" />
+                        </div>
+                        <div>
+                            <img width="120" src="assets/images/brands/brand-03.svg" alt="Brand" data-uk-svg="" />
+                        </div>
+                        <div>
+                            <img width="120" src="assets/images/brands/brand-04.svg" alt="Brand" data-uk-svg="" />
+                        </div>
+                        <div>
+                            <img width="120" src="assets/images/brands/brand-05.svg" alt="Brand" data-uk-svg="" />
+                        </div>
+                        <div>
+                            <img width="120" src="assets/images/brands/brand-06.svg" alt="Brand" data-uk-svg="" />
+                        </div>
+                        <div>
+                            <img width="120" src="assets/images/brands/brand-07.svg" alt="Brand" data-uk-svg="" />
+                        </div>
+                        <div>
+                            <img width="120" src="assets/images/brands/brand-08.svg" alt="Brand" data-uk-svg="" />
+                        </div>
+                        <div>
+                            <img width="120" src="assets/images/brands/brand-02.svg" alt="Brand" data-uk-svg="" />
+                        </div>
+                        <div>
+                            <img width="120" src="assets/images/brands/brand-01.svg" alt="Brand" data-uk-svg="" />
+                        </div>
+                    </div>
+                </div>
             </div>
             -->
-          </div>
-          <div class="footer__contact-email">
-            <svg width="20" height="16" xmlns="http://www.w3.org/2000/svg">
-              <g fill="none" fill-rule="evenodd">
-                <path d="M-2-4h24v24H-2z" />
-                <path
-                  d="M18 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm0 14h-2V5.2L10 9 4 5.2V14H2V2h1.2L10 6.2 16.8 2H18v12z"
-                  fill="white"
-                />
-              </g>
-            </svg>
-            <div class="email">
-              <a href="mailto:kontakt@eklips.dev"
-                >kontakt@eklips.dev</a
-              >
+
+            <!-- Works -->
+            <div class="uni-studio-works uk-section-medium uk-section-2xlarge@m uk-background-white dark:uk-background-gray-100">
+                <div class="uk-container uk-container-small">
+                    <div class="uk-grid-large@s uk-grid-row-3xlarge@m uk-child-width-1-2@s uk-child-width-auto@m uk-flex-between uk-flex-middle" data-uk-grid>
+                        <div class="uni-studio-works-item uk-text-center uk-animation-toggle-scale">
+                            <div class="uni-studio-works-item-image uk-panel uk-overflow-hidden">
+                                <canvas width="368" height="552"></canvas>
+                                <img src="assets/images/projects/minimalistark.com_sc.png" alt="image" data-uk-cover="">
+                                <a href="https://minimalistark.com/" class="uk-position-cover"></a>
+                            </div>
+                            <h4 class="uni-studio-works-item-title uk-h5 uk-h4@m uk-text-normal uk-margin-small-top uk-margin-top@m uk-margin-remove-bottom">
+                                <a href="https://minimalistark.com/">Minimalist Ark.</a>
+                            </h4>
+                        </div>
+                        <div class="uni-studio-works-item uk-text-center uk-animation-toggle-scale">
+                            <div class="uni-studio-works-item-image uk-panel uk-overflow-hidden">
+                                <canvas width="368" height="368"></canvas>
+                                <img src="assets/images/projects/flowersbeesandpoetry.com_sc.png" alt="image" data-uk-cover="">
+                                <a href="https://flowersbeesandpoetry.com/" class="uk-position-cover"></a>
+                            </div>
+                            <h4 class="uni-studio-works-item-title uk-h5 uk-h4@m uk-text-normal uk-margin-small-top uk-margin-top@m uk-margin-remove-bottom">
+                                <a href="https://flowersbeesandpoetry.com/">Flowers Bees & Poetry.</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="uk-flex-center uk-margin-medium-top uk-margin-2xlarge-top@m">
+                        <a href="works.html" class="uk-link-expand uk-link-underline uk-text-large@m">
+                            <i class="material-icons-round">arrow_forward</i>
+                            <span>Shikoni të gjitha projektet.</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
+
+            <!-- About -->
+            <div class="uni-studio-about swiper-parent uk-overflow-hidden uk-section-medium uk-section-2xlarge@m uk-background-gray-10 dark:uk-background-gray-100 dark:uk-text-gray-40">
+                <div class="uk-container uk-container-small">
+                    <div class="uk-grid uk-grid uk-grid-medium uk-flex-between" data-uk-grid>
+                        <div class="uk-width-5-10@m">
+                            <h2 class="uk-h3 uk-h2@s uk-h1@m uk-margin-remove dark:uk-text-gray-10">Ne krijojmë vlerë për klientët tanë.</h2>
+                            <br><br>
+                            <p class="uk-text-medium uk-text-large@m uk-margin-remove">Kombinojmë njohuritë dhe ekspertizën tonë për të krijuar dizajne dhe strategji të jashtëzakonshme të përshtatura për nevojat dhe kërkesat e biznesit tuaj në çdo kategori.</p>
+                            <div class="uk-margin-top uk-margin-large-top@m">
+                                <a href="about.html" class="uk-link-expand uk-link-underline uk-text-large@m dark:uk-text-white">
+                                    <i class="material-icons-round">arrow_forward</i>
+                                    <span>Rreth eklips.</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="uk-width-4-10@m">
+                            <div class="uk-grid uk-grid-medium uk-child-width-1-2" data-uk-grid="">
+                                <div>
+                                    <div class="uk-panel">
+                                        <h3 class="uk-h1 uk-heading-hero@m uk-margin-remove">3</h3>
+                                        <p class="uk-text-small uk-text-medium@m uk-margin-xsmall-top">Zhvillues <br> dhe dizanjër.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-panel">
+                                        <h3 class="uk-h1 uk-heading-hero@m uk-margin-remove">8+</h3>
+                                        <p class="uk-text-small uk-text-medium@m uk-margin-xsmall-top">Klientë <br> të kënaqur.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-panel">
+                                        <h3 class="uk-h1 uk-heading-hero@m uk-margin-remove">3</h3>
+                                        <p class="uk-text-small uk-text-medium@m uk-margin-xsmall-top">Vite <br> me eksperiencë</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-panel">
+                                        <h3 class="uk-h1 uk-heading-hero@m uk-margin-remove">10+</h3>
+                                        <p class="uk-text-small uk-text-medium@m uk-margin-xsmall-top">Teknologji <br> të përdorura.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="uk-margin-xlarge-top uk-margin-3xlarge-top@m">
+                        <div class="swiper-container swiper-hide-wrap uk-overflow-unset" data-swiper="items: 1.4; gap: 48; loop: true; autoplay: 2500; center: true; freeMode: false;" data-swiper-m="active: 1; items: 2; gap: 128;">
+                            <div class="swiper-wrapper uk-flex-middle">
+                                <div class="swiper-slide">
+                                    <div>
+                                        <div class="uk-panel uk-overflow-hidden">
+                                            <canvas width="474" height="474"></canvas>
+                                            <img src="assets/images/studio-about-01.jpg" alt="image" data-uk-cover="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <div class="uk-panel uk-overflow-hidden">
+                                            <canvas width="474" height="608"></canvas>
+                                            <img src="assets/images/studio-about-02.jpg" alt="image" data-uk-cover="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <div class="uk-panel uk-overflow-hidden">
+                                            <canvas width="608" height="474"></canvas>
+                                            <img src="assets/images/studio-about-03.jpg" alt="image" data-uk-cover="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <div class="uk-panel uk-overflow-hidden">
+                                            <canvas width="474" height="474"></canvas>
+                                            <img src="assets/images/studio-about-01.jpg" alt="image" data-uk-cover="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <div class="uk-panel uk-overflow-hidden">
+                                            <canvas width="474" height="608"></canvas>
+                                            <img src="assets/images/studio-about-02.jpg" alt="image" data-uk-cover="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <div class="uk-panel uk-overflow-hidden">
+                                            <canvas width="608" height="474"></canvas>
+                                            <img src="assets/images/studio-about-03.jpg" alt="image" data-uk-cover="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+
+            <!-- Blog Posts
+            <div class="uni-studio-blogposts uk-section-medium uk-section-2xlarge@m uk-background-white dark:uk-background-gray-100">
+                <div class="uk-container uk-container-small">
+                    <div class="uk-panel">
+                        <div class="uk-grid-medium uk-grid-xlarge@m uk-child-width-1-1" data-uk-grid="">
+                            <article class="post">
+                                <div class="uk-grid-xsmall uk-grid-medium@m" data-uk-grid>
+                                    <div class="uk-width-2-10@m">
+                                        <p class="uk-text-small uk-text-muted uk-margin-xsmall-top@m uk-margin-remove-bottom dark:uk-text-gray-40">Jul 10</p>
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <h2 class="uk-h4 uk-h2@m uk-text-normal">
+                                            <a href="studio-single-post.html" data-image-hover-revealer="assets\images\studio-about-02.jpg">UX Design deliverables from a Silicon Valley agency</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="post">
+                                <div class="uk-grid-xsmall uk-grid-medium@m" data-uk-grid>
+                                    <div class="uk-width-2-10@m">
+                                        <p class="uk-text-small uk-text-muted uk-margin-xsmall-top@m uk-margin-remove-bottom dark:uk-text-gray-40">Apr 23</p>
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <h2 class="uk-h4 uk-h2@m uk-text-normal">
+                                            <a href="studio-single-post.html" data-image-hover-revealer="assets/images/posts/post-02.jpg">How to organize project files in a design agency</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="post">
+                                <div class="uk-grid-xsmall uk-grid-medium@m" data-uk-grid>
+                                    <div class="uk-width-2-10@m">
+                                        <p class="uk-text-small uk-text-muted uk-margin-xsmall-top@m uk-margin-remove-bottom dark:uk-text-gray-40">Jan 07</p>
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <h2 class="uk-h4 uk-h2@m uk-text-normal">
+                                            <a href="studio-single-post.html" data-image-hover-revealer="assets/images/posts/post-03.jpg">Our design directors judge several international design awards</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+            <!-- Cta / Footer -->
+            <footer class="uni-studio-footer uk-background-gray-10 dark:uk-background-gray-100">
+                <div class="uk-container uk-container-small">
+                    <div class="uk-section-medium uk-section-2xlarge@m uk-flex-column uk-flex-between uk-height-1-1 dark:uk-background-gray-100">
+                        <div>
+                            <div class="uk-width-large@m dark:uk-text-gray-10">
+                                <h2 class="uk-h1 uk-heading-hero@m dark:uk-text-gray-10">Le të bisedojmë më tej.</h2>
+                                <div class="uk-margin-medium-top@m">
+                                    <a href="mailto:hello@eklips.dev" class="uk-link-expand uk-link-underline uk-text-large@m">
+                                        <i class="material-icons-round">arrow_forward</i>
+                                        <span>hello@eklips.dev</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-margin-xlarge-top uk-margin-3xlarge-top@m">
+                            <div class="uk-grid uk-grid-match uk-grid-medium uk-flex-between" data-uk-grid="">
+                                <div class="uk-width-4-10@m">
+                                    <div class="uk-grid uk-grid-medium uk-child-width-1-2 uk-whild-width-1-2@m uk-flex-between" data-uk-grid>
+                                        <div>
+                                            <ul class="uk-list uk-list-large">
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="works.html">
+                                                        <span>Projekte</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="about.html#capabilities">
+                                                        <span>Shërbime</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="about.html">
+                                                        <span>Rreth Nesh</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="uk-flex-right@m">
+                                            <ul class="uk-list uk-list-large">
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="https://dribbble.com">
+                                                        <span>Dribbble</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="https://instagram.com">
+                                                        <span>Instagram</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="https://linkedin.com">
+                                                        <span>LinkedIn</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-1 uk-width-expand@m uk-flex-first@m">
+                                    <div class="uk-panel uk-height-1-1 uk-flex-column uk-flex-between uk-text-large@m dark:uk-text-gray-10">
+                                        <p class="uk-margin-remove">Rruga Don Bosko, <br> Tiranë, Shqipëri</p>
+                                        <p class="uk-margin-large-top">2023 © eklips.dev</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
         </div>
-        <div class="footer__links1">
-          <a href="#about">RRETH NESH</a>
-          <a href="#contact">NA KONTAKTONI</a>
-        </div>
-        <div class="footer__links2">
-          <a href="mailto:hello@eklips.dev?subject=Info"
-            >PAKETAT</a
-          >
-          <a href="#services">SHËRBIMET</a>
-        </div>
-      </div>
-     </footer>
-    <script src="/js/app.js"></script>
-  </body>
+
+        <!-- Initiat Scripts -->
+        <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js"></script>
+        <script defer src="assets/js/responsive-uk-attr.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+        <script defer src="assets/js/app.js"></script>
+        <script defer src="assets/js/swiper-helper.js"></script>
+        <script defer src="assets/js/typed-helper.js"></script>
+        <script defer src="assets/js/anime-helper.js"></script>
+        <script defer src="assets/js/anime-helper-defined-timelines.js"></script>
+    </body>
 </html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class="studio-agency dark:uk-background-gray-100 dark:uk-text-gray-40">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Strategji Dixhitale — eklips.dev</title>
+        <link rel="icon" type="image/png" href="assets/images/favicon/favicon.ico"/>
+        <meta name="description" content="page description here">
+
+        <link rel="preload" href="assets/fonts/space-grotesk/SpaceGrotesk-Regular.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="assets/fonts/space-grotesk/SpaceGrotesk-Bold.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="assets/fonts/space-grotesk/SpaceGrotesk-Medium.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="assets/fonts/brand-icons/brand-icons.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css" as="style">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css" as="style">
+        <link rel="preload" href="assets/css/theme/main.css" as="style">
+
+        <script src="assets/js/app-head.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css">
+        <link rel="stylesheet" href="assets/css/theme/main.css">
+    
+    <!--
+        <script async src="https://www.googletagmanager.com/gtag/js?id=#"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '#');
+        </script>
+        -->
+    </head>
+    <body>
+
+        <!-- Dark/Light toggle -->
+        <div class="darkmode-trigger bottom-right" data-darkmode-toggle="">
+            <label class="switch">
+                <span class="sr-only">Tema e Errët</span>
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <!-- Video modal -->
+        <div id="uni-modal-media-video" data-uk-modal="">
+            <div class="uk-modal-dialog uk-modal-video uk-width-2-3@m uk-margin-auto-vertical">
+                <button class="uk-modal-close-outside uk-close" type="button">
+                    <i class="material-icons uk-icon-medium">mbyll</i>
+                </button>
+                <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" controls playsinline data-uk-video></video>
+            </div>
+        </div>
+
+        <!-- Menu modal -->
+        <div id="uni-menu-modal" class="uk-modal-full" data-uk-modal="">
+            <div class="uk-modal-dialog">
+                <div class="uk-container">
+                    <div class="uk-flex-middle uk-flex-center" data-uk-height-viewport="">
+                        <ul class="uk-list uk-list-large uk-h2 uk-h1@m uk-text-center">
+                            <li><a href="index.html">kreu.</a></li>
+                            <li><a href="works.html">projekte.</a></li>
+                            <li><a href="about.html">rreth nesh.</a></li>
+                            <li><a href="mailto:hello@eklips.dev">kontakt.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wrap: Studio Demo -->
+        <div class="wrap">
+
+            <!-- Hero -->
+            <div class="uni-studio-hero uk-panel uk-overflow-hidden">
+
+                <!-- Hero: Header -->
+                <header class="uni-studio-header uni-header">
+                    <div class="uni-header-navbar uk-sticky-transparent" data-uk-sticky="top: 120; animation: uk-animation-slide-top;">
+                        <div class="uk-container uk-container-expand">
+                            <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar="">
+                                <div class="uk-navbar-top uk-flex-center">
+                                    <div class="uk-navbar-left">
+                                        <div class="uk-navbar-item">
+                                            <a class="uk-logo uk-navbar-item uk-h4 uk-h3@s uk-margin-remove dark:uk-text-gray-10" href="index.html">eklips.dev</a>
+                                            <a class="uk-logo uk-navbar-item uk-sticky-logo dark:uk-text-gray-10" href="index.html">e.</a>
+                                        </div>
+                                    </div>
+                                    <div class="uk-navbar-right uk-flex-right">
+                                        <div class="uk-navbar-item">
+                                            <a class="uni-menu-trigger" href="#uni-menu-modal" data-uk-toggle=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+
+            </div>
+
+            <!-- Single service -->
+            <article class="uni-article uni-single-service uk-section-large uk-section-2xlarge@m uk-padding-remove-top@m">
+
+                <div class="uk-container">
+
+                    <!-- Hero: Content -->
+
+                    <div class="uk-panel uk-overflow-hidden">
+                        <canvas class="uk-visible@m" width="1200" height="640"></canvas>
+                        <canvas class="uk-hidden@m" width="576" height="610"></canvas>
+                        <img src="assets/images/heros/studio-hero.jpg" alt="image" data-uk-cover="">
+                    </div>
+
+                    <div class="uk-margin-large-top uk-margin-2xlarge-top@m">
+                        <div class="uk-container uk-container-small">
+                            <h2 class="uk-h3 uk-h1@m uk-margin-remove dark:uk-text-gray-10">Digital Strategy</h2>
+                            <p class="uk-text-large@m uk-margin-xlarge-top@m">Instead we dive deep to find the ideas, values, and people that make your business different, then transform those facts into an enthralling story. Using compelling content, engaged communities, fresh graphics, and a clear and captivating message, we turn the tide in your favor.</p>
+                            <h3 class="uk-h4 uk-h3@m uk-margin-xlarge-top@m">01. What is Digital Strategy?</h3>
+                            <p class="uk-text-large@m">lorem ipsum ultricies at duis volutpat vestibulum sed ut. Nec pharetra leo magnis egestas elit eget vitae duis. tempus egestas erat ultricies id fames nisl viverra bibendum. parturient eu mi elit facilisis lobortis fusce non.</p>
+                            <h3 class="uk-h4 uk-h3@m uk-margin-xlarge-top@m">02. What you get with us?</h3>
+                            <p class="uk-text-large@m">lorem ipsum ultricies at duis volutpat vestibulum sed ut. Nec pharetra leo magnis egestas elit eget vitae duis. tempus egestas erat ultricies id fames nisl viverra bibendum. parturient eu mi elit facilisis lobortis fusce non.</p>
+                            <h3 class="uk-h4 uk-h3@m uk-margin-xlarge-top@m">03. Brand Architecture</h3>
+                            <p class="uk-text-large@m">lorem ipsum ultricies at duis volutpat vestibulum sed ut. Nec pharetra leo magnis egestas elit eget vitae duis. tempus egestas erat ultricies id fames nisl viverra bibendum. parturient eu mi elit facilisis lobortis fusce non.</p>
+                            <h3 class="uk-h4 uk-h3@m uk-margin-xlarge-top@m">04. Brand Vision & Strategic Planning</h3>
+                            <p class="uk-text-large@m">lorem ipsum ultricies at duis volutpat vestibulum sed ut. Nec pharetra leo magnis egestas elit eget vitae duis. tempus egestas erat ultricies id fames nisl viverra bibendum. parturient eu mi elit facilisis lobortis fusce non.</p>
+                            <h3 class="uk-h4 uk-h3@m uk-margin-xlarge-top@m">05. Brand Positioning</h3>
+                            <p class="uk-text-large@m">lorem ipsum ultricies at duis volutpat vestibulum sed ut. Nec pharetra leo magnis egestas elit eget vitae duis. tempus egestas erat ultricies id fames nisl viverra bibendum. parturient eu mi elit facilisis lobortis fusce non.</p>
+
+                            <div class="uk-panel uk-margin-xlarge-top uk-margin-2xlarge-top@m">
+                                <ul class="uk-subnav">
+                                    <li>Share:</li>
+                                    <li><a href="https://facebook.com/sharer/sharer.php?u=https://unistudio.co/html/dannel/pages/studio-single-service.html"><i class="brand-facebook uk-icon-small"><span class="sr-only">Facebook Icon</span></i></a></li>
+                                    <li><a href="https://twitter.com/share?url=https://unistudio.co/html/dannel/pages/studio-single-service.html&text=Digital Strategy"><i class="brand-twitter uk-icon-small"><span class="sr-only">Twitter Icon</span></i></a></li>
+                                    <li><a href="https://pinterest.com/pin/create/bookmarklet/?&url=https://unistudio.co/html/dannel/pages/studio-single-service.html&description=Digital Strategy"><i class="brand-pinterest uk-icon-small"><span class="sr-only">Pinterest Icon</span></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- Cta / Footer -->
+            <footer class="uni-studio-footer uk-background-gray-10 dark:uk-background-gray-100">
+                <div class="uk-container uk-container-small">
+                    <div class="uk-section-medium uk-section-2xlarge@m uk-flex-column uk-flex-between uk-height-1-1 dark:uk-background-gray-100">
+                        <div>
+                            <div class="uk-width-large@m dark:uk-text-gray-10">
+                                <h2 class="uk-h1 uk-heading-hero@m dark:uk-text-gray-10">Le të bisedojmë më tej.</h2>
+                                <div class="uk-margin-medium-top@m">
+                                    <a href="mailto:hello@eklips.dev" class="uk-link-expand uk-link-underline uk-text-large@m">
+                                        <i class="material-icons-round">arrow_forward</i>
+                                        <span>hello@eklips.dev</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-margin-xlarge-top uk-margin-3xlarge-top@m">
+                            <div class="uk-grid uk-grid-match uk-grid-medium uk-flex-between" data-uk-grid="">
+                                <div class="uk-width-4-10@m">
+                                    <div class="uk-grid uk-grid-medium uk-child-width-1-2 uk-whild-width-1-2@m uk-flex-between" data-uk-grid>
+                                        <div>
+                                            <ul class="uk-list uk-list-large">
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="works.html">
+                                                        <span>Projekte</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="about.html#capabilities">
+                                                        <span>Shërbime</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="about.html">
+                                                        <span>Rreth Nesh</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="uk-flex-right@m">
+                                            <ul class="uk-list uk-list-large">
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="https://dribbble.com">
+                                                        <span>Dribbble</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="https://instagram.com">
+                                                        <span>Instagram</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="https://linkedin.com">
+                                                        <span>LinkedIn</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-1 uk-width-expand@m uk-flex-first@m">
+                                    <div class="uk-panel uk-height-1-1 uk-flex-column uk-flex-between uk-text-large@m dark:uk-text-gray-10">
+                                        <p class="uk-margin-remove">Rruga Don Bosko, <br> Tiranë, Shqipëri</p>
+                                        <p class="uk-margin-large-top">2023 © eklips.dev</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <!-- Initiat Scripts -->
+        <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js"></script>
+        <script defer src="assets/js/responsive-uk-attr.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+        <script defer src="assets/js/app.js"></script>
+        <script defer src="assets/js/swiper-helper.js"></script>
+        <script defer src="assets/js/typed-helper.js"></script>
+        <script defer src="assets/js/anime-helper.js"></script>
+        <script defer src="assets/js/anime-helper-defined-timelines.js"></script>
+    </body>
+</html>
